@@ -1,8 +1,8 @@
 // Video display style
 
 $(document).ready(function() {
-	$("#showTblContent").hide();
-	$("#showThumnail").show();
+	$("#showTblContent").hide();// After HTHL work already, this function will hide List content from web page
+	$("#showThumnail").show();// 
 	$("#btnLarge").addClass("btn-primary");
 
 });
