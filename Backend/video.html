@@ -198,10 +198,10 @@
 										<div class="col-md-2 col-sm-3 col-xs-6 div-padding-bottom">
 											<span class="pull-right">
 												<div class="btn-group">
-													<button class="btn btn-primary" id="btnLarge" onclick="showList()">
+													<button type="button" class="btn" id="btnLarge" onclick="showThumbnail()">
 														<i class="glyphicon glyphicon-th-large"></i><!--Button show large content-->
 													</button>
-													<button type="button" class="btn btn-default" id="btnList" >
+													<button type="button" class="btn" id="btnList" onclick="showList()">
 														<i class="glyphicon glyphicon-th-list"></i><!--This Button use to show list content-->
 													</button>
 												</div> 
@@ -838,7 +838,7 @@
 				</div>
 			</div>
 		</div>
-		
+		<script src="js/script.js"></script>
 		<script>
 			$("document").ready(function(e) {
 				$("#fmore").on("click", function() {// wire up the OK button to dismiss the modal when shown
