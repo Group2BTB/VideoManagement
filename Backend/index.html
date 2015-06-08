@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="img/icon.png" />
+
+		<title>Video Management</title>
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top boder">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<span><img src="img/video.png" class="logo-head"/> Video Management</span>					
+					</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="upload.html">
+								<button type="button" class="btn btn-default">Upload</button>
+							</a>
+						</li>
+						<li>
+							<a href="">View Site</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="img/profile.jpg" alt="Profile" class="img-circle"><span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Thorn Sereyvong</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Profile Setting</a></li>
+								<li><a href="#">Change Password</a></li>
+								<li><a href="login.html">Logout</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Help</a></li>								
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>		
+		</nav>
+		<div class="container-fluid Dashboard">
+			<div class="row">				
+				<div class="col-sm-3 col-md-2 sidebar-left">
+					<img src="img/logohrd.png" class="img-responsive" alt="Cinque Terre">
+				</div>
+				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+					<h1 class="page-header">Dashboard</h1>
+					<div class="row placeholders">
+						<div class="row">												
+							<div class="col-lg-3 col-md-6">
+								<a href="category.html">
+									<div class="panel panel-green">
+										<div class="panel-heading">
+											<div class="row">
+												<div class="col-md-3">
+													
+												</div>
+												<div class="col-xs-9 text-right" >
+													<div class="huge"><h1 style="color:#43630A;">Category</h1></div>
+													<div style="color:#43630A;">Category Manager!</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel-footer">
+											<span class="pull-left">
+												<i class="glyphicon glyphicon-th i-green i-size"></i>
+											</span>
+											<div class="clearfix"></div>
+										</div>									
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6">								
+								<a href="menu.html">
+									<div class="panel panel-new-blue">
+										<div class="panel-heading">
+											<div class="row">
+												<div class="col-md-3">
+													
+												</div>
+												<div class="col-xs-9 text-right">
+													<div class="huge"><h1>Menu</h1></div>
+													<div>Menu Manager!</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel-footer">
+											<span class="pull-left">
+												<i class="glyphicon glyphicon-list-alt i-new-blue i-size" aria-hidden="true"></i>
+											</span>										
+											<div class="clearfix"></div>
+										</div>									
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<a href="user.html">
+									<div class="panel panel-new-red">
+										<div class="panel-heading">
+											<div class="row">
+												<div class="col-xs-3">
+													
+												</div>
+												<div class="col-xs-9 text-right">
+													<div class="huge"><h1 style="color:#84371A;">User</h1></div>
+													<div  style="color:#84371A;">User Manager!</div>
+												</div>
+											</div>
+										</div>										
+										<div class="panel-footer">
+											<span class="pull-left">
+												<i class="glyphicon glyphicon-user i-new-red i-size" aria-hidden="true"></i>
+											</span>
+											<div class="clearfix"></div>
+										</div>									
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<a href="video.html">
+									<div class="panel panel-primary">
+										<div class="panel-heading">
+											<div class="row">
+												<div class="col-xs-3">
+													
+												</div>
+												<div class="col-xs-9 text-right">
+													<div class="huge"><h1 style="color:#094579;">Videos</h1></div>
+													<div  style="color:#094579;">Video Manager!</div>
+												</div>
+											</div>
+										</div>
+										
+											<div class="panel-footer">
+												<span class="pull-left">
+													<i class="glyphicon glyphicon-facetime-video i-size" aria-hidden="true"></i>
+												</span>												
+												<div class="clearfix"></div>
+											</div>
+										
+									</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
