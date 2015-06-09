@@ -3918,7 +3918,7 @@ if (typeof jQuery === 'undefined') {
          * Validate Chinese citizen identification number
          *
          * Rules:
-         * - For current 18-digit system (since 1st Oct 1999, defined by GB11643—1999 national standard):
+         * - For current 18-digit system (since 1st Oct 1999, defined by GB11643â€”1999 national standard):
          *     - Digit 0-5: Must be a valid administrative division code of China PR.
          *     - Digit 6-13: Must be a valid YYYYMMDD date of birth. A future date is tolerated.
          *     - Digit 14-16: Order code, any integer.
@@ -6998,7 +6998,7 @@ if (typeof jQuery === 'undefined') {
                 sum = [8, 7, 6, 5, 4, 3, 2, 1, 0, 9, 10][sum - 1];
                 return (sum + '' === value.substr(8, 1));
             } else if (value.length === 9 || value.length === 10) {
-                // Validate Czech birth number (Rodné číslo), which is also national identifier
+                // Validate Czech birth number (RodnÃ© Ä�Ã­slo), which is also national identifier
                 var year  = 1900 + parseInt(value.substr(0, 2), 10),
                     month = parseInt(value.substr(2, 2), 10) % 50 % 20,
                     day   = parseInt(value.substr(4, 2), 10);
@@ -7105,11 +7105,11 @@ if (typeof jQuery === 'undefined') {
         },
 
         /**
-         * Validate Spanish VAT number (NIF - Número de Identificación Fiscal)
+         * Validate Spanish VAT number (NIF - NÃºmero de IdentificaciÃ³n Fiscal)
          * Can be:
          * i) DNI (Documento nacional de identidad), for Spaniards
-         * ii) NIE (Número de Identificación de Extranjeros), for foreigners
-         * iii) CIF (Certificado de Identificación Fiscal), for legal entities and others
+         * ii) NIE (NÃºmero de IdentificaciÃ³n de Extranjeros), for foreigners
+         * iii) CIF (Certificado de IdentificaciÃ³n Fiscal), for legal entities and others
          *
          * Examples:
          * - Valid: i) ES54362315K; ii) ESX2482300W, ESX5253868R; iii) ESM1234567L, ESJ99216582, ESB58378431, ESB64717838
@@ -7202,7 +7202,7 @@ if (typeof jQuery === 'undefined') {
         },
 
         /**
-         * Validate French VAT number (TVA - taxe sur la valeur ajoutée)
+         * Validate French VAT number (TVA - taxe sur la valeur ajoutÃ©e)
          * It's constructed by a SIREN number, prefixed by two characters.
          *
          * Examples:
