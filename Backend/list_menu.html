@@ -122,9 +122,7 @@
 										<span class="input-group-addon" id="basic-addon1">Short by: </span>
 										<select class="form-control">												
 											<option>Date</option>
-											<option>Name</option>												
-											<option>Video ASC</option>
-											<option>Video DESC</option>
+											<option>Name</option>
 										</select>
 									</div>
 								</div>
@@ -143,19 +141,19 @@
 									<div class="input-group">
 										<input type="text" class="form-control" placeholder="Search for...">
 										<span class="input-group-btn">
-										<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> </button>
+										<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search i-green"></i> </button>
 									  </span>
 									</div>
 								</div>
 																			
 								<div class="col-md-2 col-sm-1 col-xs-6 div-padding-bottom">												
-									<button id="fmore" class="btn btn-default" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+									<button id="fmore" class="btn btn-default" type="button"><i class="glyphicon glyphicon-wrench i-green"></i> Search Tool</button>
 								</div>
 								<div class="col-md-2 col-sm-3 col-xs-6 div-padding-bottom">	
 									<span class="pull-right">											
 										<div class="btn-group">
-										  <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-th-large"></i></button>
-										  <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-th-list"></i></button>
+										  <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-th-large i-green"></i></button>
+										  <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-th-list "></i></button>
 										</div>
 									</span>
 								</div>
@@ -166,116 +164,48 @@
 								Start show table
 							-->
 							
-								<div class="col-md-12 col-sm-12 col-xs-12 div-padding-bottom" style="display:none;">
+								<div class="col-md-12 col-sm-12 col-xs-12 div-padding-bottom">
 									<div class="container-fluid">	
 									<div class="table-responsive">
 										<table class="table table-bordered table-hover">												
 											<thead>
-												<tr style="border-color:#4cae4c; background-color:#5cb85c">
-													<th style="border-color:#4cae4c;">
-														<span>
-																											
-														</span>	
-													</th>
-													<th style="border-color:#4cae4c;">#</th>
-													<th style="border-color:#4cae4c;">Name</th>
-													<th style="border-color:#4cae4c;">Username</th>
-													<th style="border-color:#4cae4c;">Email</th>
-													<th style="border-color:#4cae4c;">Register Date</th>
-													<th style="border-color:#4cae4c;">Status</th>
-													<th style="border-color:#4cae4c;">Detail</th>
-													<th style="border-color:#4cae4c;">More</th>
+												<tr class="backgroud-green">
+													<th class="border-green"></th>
+													<th class="border-green">#</th>
+													<th class="border-green">Name</th>
+													<th class="border-green">Parent</th>
+													<th class="border-green">Create Date</th>
+													<th class="border-green">Status</th>
+													<th class="border-green">More</th>
 												</tr>
 											</thead>
 											</tbody>
 												<tr>
-													<td>
+													<td class="con-center">
 														<span>
 															<input type="checkbox">
-															<img src="img/online.jpg">
 														</span>	
 													</td>
 													<td>1</td>
 													<td>Sereyvong</td>
-													<td>sereyvong007</td>
-													<td>sereyvong98@gmail.com</td>
+													<td>sereyvong007</td>													
 													<td>Apr 23, 2015 10:00:00</td>
 													<td><span class="label label-success">Active</span></td>
 													<td>
-														<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 2    
-														<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 2 
-														<i class="glyphicon glyphicon-thumbs-up"></i> 20 
-														<i class="glyphicon glyphicon-thumbs-down"></i> 20 
-													</td>
-													<td>
 														<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
 													</td>
 												</tr>
 												<tr>
-													<td>
+													<td class="con-center">
 														<span>
 															<input type="checkbox">
-															<img src="img/online.jpg">
 														</span>	
 													</td>
 													<td>2</td>
-													<td>Leang Heng</td>
-													<td>leangheng</td>
-													<td>leangheng@gmail.com</td>
-													<td>Apr 22, 2015 11:00:00</td>
+													<td>Sereyvong</td>
+													<td>sereyvong007</td>													
+													<td>Apr 23, 2015 10:00:00</td>
 													<td><span class="label label-success">Active</span></td>
-													<td>
-														<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0    
-														<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-														<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-														<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-													</td>
-													<td>
-														<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<span>
-															<input type="checkbox">
-															<img src="img/offline.png">
-														</span>	
-													</td>
-													<td>3</td>
-													<td>Kaka</td>
-													<td>Kakasmall</td>
-													<td>Kakasmall@gmail.com</td>
-													<td>Apr 22, 2015 10:00:00</td>
-													<td><span class="label label-success">Active</span></td>
-													<td>
-														<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 5    
-														<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 99 
-														<i class="glyphicon glyphicon-thumbs-up"></i> 30 
-														<i class="glyphicon glyphicon-thumbs-down"></i> 30 
-													</td>
-													<td>
-														<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<span>
-															<input type="checkbox">
-															<img src="img/offline.png">
-														</span>	
-													</td>
-													<td>4</td>
-													<td>Dara KT</td>
-													<td>darakt</td>
-													<td>darakt@gmail.com</td>
-													<td>Apr 22, 2015 08:00:00</td>
-													<td><span class="label label-danger">Deactive</span></td>
-													<td>
-														<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-														<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-														<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-														<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-													</td>
 													<td>
 														<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
 													</td>
@@ -301,393 +231,6 @@
 							<!---
 								end show table
 							-->
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right icon-online"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Sereyvong</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-														<input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-success">Active</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Leangheng</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-													  <input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-danger">Deactive</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>								
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right icon-online"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Sereyvong</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-														<input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-success">Active</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right icon-online"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Sereyvong</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-														<input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-success">Active</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="clear4"></div>
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right icon-online"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Sereyvong</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-														<input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-success">Active</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Leangheng</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-													  <input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-danger">Deactive</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="clear6"></div>											
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Leangheng</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-													  <input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-danger">Deactive</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Leangheng</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-													  <input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-danger">Deactive</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="clear4"></div>
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Leangheng</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-													  <input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-danger">Deactive</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right icon-online"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Sereyvong</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-														<input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-success">Active</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="clear4"></div>
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right icon-online"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Sereyvong</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-														<input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-success">Active</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>
-								<div class="col-md-2 col-sm-3 col-xs-12">
-									<div class="thumbnail">
-									  <div class="caption">												
-										<img class="img-responsive" src="img/msc.jpg" alt="">												
-										<div class="video-title">	
-											<span class="badge pull-right icon-online"><i class="glyphicon glyphicon-user"></i></span>
-											<p>
-												<a href="#">Sereyvong</a>
-											</p>												
-										</div>
-										<hr class="hr-thumb"/>
-										<div class="">
-											<span class="pull-left">
-												<div class="checkbox" style="padding-top: 0px;">
-													<label>
-														<input class="check-input" type="checkbox">
-													</label>
-												</div>
-											</span>
-											<span class="pull-right">
-												<span class="label label-success">Active</span>
-												<i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0   
-												<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-up"></i> 0 
-												<i class="glyphicon glyphicon-thumbs-down"></i> 0 
-											</span>
-											<div class="clearfix"></div>
-										</div>												
-									  </div>
-									</div>											
-								</div>	
-								<div class="clear6"></div>	
-								<div class="col-md-12 col-sm-12 col-xs-12">
-									<ul class="pagination  pull-right">
-										<li class="active"><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
-										<li><a href="#">5</a></li>
-										<li><a href="#">&raquo;</a></li>
-									</ul>
-								</div>
 							</div>
 						</div>
 					</div>
