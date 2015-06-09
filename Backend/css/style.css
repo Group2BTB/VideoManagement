@@ -1,0 +1,156 @@
+.boder{
+	border-bottom: 1px solid #e7e7e7;
+}
+.my-size{
+	font-size:50px;
+}
+.Dashboard{
+	padding-right: 25px;
+}
+.checkVideo{
+	padding-top: 0px;
+}
+.div-padding-bottom{
+	padding-bottom: 5px;
+}
+.hr-thumb{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.video-title{
+	padding-left: 10px;
+	padding-top: 5px;
+	
+}
+.sidebar-left{
+	display:none;
+}
+@media (min-width: 768px) {
+  .sidebar-left {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+.main {
+  padding: 75px;
+}
+@media (min-width: 768px) {
+	.main {
+		padding-right: 40px;
+		padding-left: 40px;
+	}	
+}
+.clear4{}
+.clear6{}
+@media (max-width: 990px) {
+	.clear4{
+		clear:both;
+	}
+}
+@media (min-width: 991px) {
+	.clear6{
+		clear:both;
+	}
+}
+.main .page-header {
+  margin-top: 0;
+}
+.checkVideo{
+	padding-top: 0px;
+}
+.p-padding{
+	padding-left: 10px;
+}
+.div-padding-bottom{
+	padding-bottom: 5px;
+}
+.frm-upload{
+	margin-bottom: 0px;
+}
+
+.fileUpload input.upload {
+  height: 170px;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+}
+th{
+	text-align:center;
+}
+.background-red{
+	  background-color: #d9534f;
+}
+.background-green{
+	  background-color: #5cb85c;
+}
+.active-menu{
+	border-bottom:3px solid #337ab7;
+}
+.panel-green{
+	background-color:#afde5c;
+}
+.panel-new-blue{
+	background-color:#5ccddf;
+}
+.panel-new-red{
+	background-color:#df815d;
+}
+.i-green{
+	color:#5cb85c;
+}
+.i-new-blue{
+	color:#5ccddf;
+}
+.i-blue{
+	color:#337AB7;
+}
+.i-red{
+	color:#d9534f;
+}
+.i-new-red{
+	color:#df815d;
+}
+.caption>img{
+	width: 100%;
+}
+.i-size{
+	font-size: 30px;
+}
+.head-login{
+	background-color: rgb(51, 122, 183);
+	border-radius: 5px 5px 5px 5px;
+}
+.logo-head{
+	width: 33px;
+}
+
+.btn-act{
+	margin-top: 0px;
+}
+@media (max-width: 768px) {
+	.btn-act{
+		margin-top: 5px;
+	}
+}
+.icon-online{
+	background-color:#5cb85c;
+}
+.check-input{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
