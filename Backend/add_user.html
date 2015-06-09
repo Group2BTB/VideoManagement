@@ -88,7 +88,7 @@
 							<span class="sr-only">Toggle navigation</span>
 							<span class="glyphicon glyphicon-plus-sign"></span>
 						  </button>
-						  <a class="navbar-brand" href="#">Category</a>
+						  <a class="navbar-brand" href="#">New User</a>
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
@@ -127,19 +127,37 @@
 						<div class="panel-body">
 							<br/>
 							<br/>
-							<div class="row">								
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-xs-12">
+									<div class="fileUpload">
+										<span><img style="cursor:pointer;" src="img/pro.png" alt="" class="upload img-responsive"></span>
+										<input type="file" accept="video/*" class="upload" />
+									</div>
+								</div>
 								
 								<div class="col-md-5 col-sm-5 col-xs-12 form-horizontal">										
 									<div class="form-group">
-										<label for="title" class="col-sm-3 control-label">*Title:</label>
+										<label for="title" class="col-sm-3 control-label">*Name:</label>
 										<div class="col-sm-9">
 										  <input type="email" class="form-control" id="title" placeholder="Email">
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="alias" class="col-sm-3 control-label">Alias:</label>
+										<label for="username" class="col-sm-3 control-label">*Username:</label>
 										<div class="col-sm-9">
-										  <input type="email" class="form-control" id="alias" placeholder="Email">
+										  <input type="email" class="form-control" id="username" placeholder="Email">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="password" class="col-sm-3 control-label">*Password:</label>
+										<div class="col-sm-9">
+										  <input type="email" class="form-control" id="password" placeholder="Email">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="email" class="col-sm-3 control-label">*Email:</label>
+										<div class="col-sm-9">
+										  <input type="email" class="form-control" id="email" placeholder="Email">
 										</div>
 									</div>
 									<div class="form-group">
@@ -151,38 +169,24 @@
 								</div>
 								<div class="col-md-5 col-sm-5 col-xs-12 form-horizontal">
 									<div class="form-group">
-										<label for="category" class="col-sm-3 control-label">Parent:</label>
-										<div class="col-sm-9">
-											<select id="category" class="form-control">
-												<option>-- Select a parent --</option>
-												<option>Java</option>
-												<option>Javascript</option>												
-												<option>jQuery</option>												
-												<option>CSS</option>												
-											</select>
-										</div>
-									</div>
-									<div class="form-group">
 										<label for="status" class="col-sm-3 control-label">Status:</label>
 										<div class="col-sm-9">
 											<select id="status" class="form-control">
-												<option>Published</option>
-												<option>Unpublished</option>												
-												<option>Achieved</option>												
-												<option>Trashed</option>												
+												<option>Activate</option>
+												<option>Deactivate</option>											
 											</select>
 										</div>
-									</div>	
+									</div>								
 									<div class="form-group">
-										<label for="access" class="col-sm-3 control-label">Access:</label>
+										<label for="category" class="col-sm-3 control-label">Role:</label>
 										<div class="col-sm-9">
-											<select id="access" class="form-control">
-												<option>Public</option>
-												<option>Guest</option>												
-												<option>Registered</option>												
+											<select id="category" class="form-control">
+												<option>Administrator</option>
+												<option>User</option>												
 											</select>
 										</div>
-									</div>	
+									</div>
+									
 									<br/>
 									<br/>
 									<br/>

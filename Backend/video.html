@@ -14,12 +14,11 @@
 		<link href="css/style.css" rel="stylesheet">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		
 	</head>
 	<body>
 		<div class="navbar-fixed-top">
 			<nav class="navbar navbar-default boder" style="border-right:none;border-left:none;border-radius: 0px;margin-bottom: 0px;background-color:white">
-				<div class="container-fluid">
+				<div class="container-fluid">				
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 							<span class="sr-only">Toggle navigation</span>
@@ -27,137 +26,102 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="index.html"> <span><img src="img/video.png" class="logo-head" /> TEAM 2 BTB</span> </a>
+						<a class="navbar-brand" href="index.html">
+							<span><img src="img/video.png" class="logo-head" /> TEAM 2 BTB</span>					
+						</a>
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li>
-										<a href="#">New Category</a>
-									</li>
-									<li>
-										<a href="#">List Category</a>
-									</li>
+									<li><a href="category.html">New Category</a></li>
+									<li><a href="list_category.html">List Category</a></li>									
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li>
-										<a href="#">New Menu</a>
-									</li>
-									<li>
-										<a href="#">List Menu</a>
-									</li>
+									<li><a href="menu.html">New Menu</a></li>
+									<li><a href="list_menu.html">List Menu</a></li>									
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Video <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li>
-										<a href="upload.html">New Video</a>
-									</li>
-									<li>
-										<a href="video.html">List Video</a>
-									</li>
+									<li><a href="upload.html">New Video</a></li>
+									<li><a href="video.html">List Video</a></li>									
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li>
-										<a href="#">New User</a>
-									</li>
-									<li>
-										<a href="user.html">List User</a>
-									</li>
+									<li><a href="add_user.html">New User</a></li>
+									<li><a href="user.html">List User</a></li>									
 								</ul>
 							</li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown drop">
+							<li class="dropdown drop">							
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="img/profile.jpg" style="width:18px;" alt="Profile" class="img-circle"><span class="caret"></span></a>
 								<ul class="dropdown-menu" style="" role="menu">
-									<li>
-										<a href="#">Thorn Sereyvong</a>
-									</li>
+									<li><a href="#">Thorn Sereyvong</a></li>
 									<li class="divider"></li>
-									<li>
-										<a href="#">Profile Setting</a>
-									</li>
-									<li>
-										<a href="#">Change Password</a>
-									</li>
-									<li>
-										<a href="login.html">Logout</a>
-									</li>
+									<li><a href="#">Profile Setting</a></li>
+									<li><a href="#">Change Password</a></li>
+									<li><a href="login.html">Logout</a></li>
 									<li class="divider"></li>
-									<li>
-										<a href="#">Privacy</a>
-									</li>
-									<li>
-										<a href="#">Help</a>
-									</li>
+									<li><a href="#">Privacy</a></li>
+									<li><a href="#">Help</a></li>								
 								</ul>
 							</li>
 						</ul>
-					</div>
+					</div>			
 				</div>
 			</nav>
 			<div style="padding-top:0px;background-color:#e7e7e7;" class="">
 				<nav class="navbar navbar-default" style="border-top:none;border-right:none;border-left: none;border-radius: 0px;">
-					<div class="container-fluid">
+					  <div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="glyphicon glyphicon-plus-sign"></span>
-							</button>
-							<a class="navbar-brand" href="#">Video Management</a>
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="glyphicon glyphicon-plus-sign"></span>
+						  </button>
+						  <a class="navbar-brand" href="#">Video Management</a>
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-							<form class="navbar-form navbar-left" role="search" style="border:none;">
-								<button type="button" class="btn btn-success btn-act">
-									<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New
-								</button>
-								<button type="button" class="btn btn-default btn-act">
-									<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit
-								</button>
-								<button type="button" class="btn btn-danger btn-act">
-									<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash
-								</button>
-								<button type="submit" class="btn btn-info btn-act">
-									<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Publish
-								</button>
-								<button type="submit" class="btn btn-warning btn-act">
-									<span class="glyphicon glyphicon-record" aria-hidden="true"></span> Unpublished
-								</button>
-							</form>
-							<form class="navbar-form navbar-right" role="search" style="border-bottom:none;">
-								<button type="submit" class="btn btn-default">
-									<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Help
-								</button>
-							</form>
+						  
+							<form class="navbar-form navbar-left" role="search" style="border:none;">							
+								<button type="button" class="btn btn-success btn-act"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New</button>
+								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-pencil i-green" aria-hidden="true"></span> Edit</button>
+								<button type="button" class="btn btn-danger btn-act"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash</button>
+								<button type="submit" class="btn btn-info btn-act"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Publish</button>
+								<button type="submit" class="btn btn-warning btn-act"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Unpublished</button>								
+								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-check i-green" aria-hidden="true"></span> Check All</button>
+								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-refresh i-green" aria-hidden="true"></span> Refresh</button>
+							</form>	
+							<form class="navbar-form navbar-right" role="search" style="border-bottom:none;">								
+								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Help</button>									
+							</form>	
 						</div>
-					</div>
-				</nav>
-			</div>
+					  </div>
+					</nav>
+			</div>		
 		</div>
-
+		
+		
 		<div class="container-fluid"  style="padding-top: 75px;">
 			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<div class="panel panel-default">
-						<form id="loginform" class="form-horizontal" role="form">
+				<div class="col-md-12 col-sm-12">						
+					<div class="panel panel-default">						
+						<form id="loginform" class="form-horizontal" role="form">							
 							<div class="panel-heading">
 								<div class="row">
-									<div class="col-md-12 col-sm-12 col-xs-12">
-										<div class="col-md-3 col-sm-3 col-xs-6 div-padding-bottom">
+									<div class="col-md-12 col-sm-12 col-xs-12">																										
+										<div class="col-md-3 col-sm-3 col-xs-6 div-padding-bottom">	
 											<div class="input-group">
 												<span class="input-group-addon" id="basic-addon1">Short by: </span>
 												<select class="form-control">
@@ -169,7 +133,7 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-md-2 col-sm-2 col-xs-6 div-padding-bottom">
+										<div class="col-md-2 col-sm-2 col-xs-6 div-padding-bottom">	
 											<div class="input-group">
 												<span class="input-group-addon" id="basic-addon1">View On: </span>
 												<select class="form-control">
@@ -178,33 +142,26 @@
 													<option>48</option>
 													<option>96</option>
 												</select>
-											</div>
+											</div>												
 										</div>
-										<div class="col-md-3 col-sm-3 col-xs-12 div-padding-bottom">
+										<div class="col-md-3 col-sm-3 col-xs-12 div-padding-bottom">	
 											<div class="input-group">
 												<input type="text" class="form-control" placeholder="Search for...">
 												<span class="input-group-btn">
-													<button class="btn btn-default" type="button">
-														<i class="glyphicon glyphicon-search"></i>
-													</button> </span>
+												<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> </button>
+											  </span>
 											</div>
 										</div>
-
-										<div class="col-md-2 col-sm-1 col-xs-6 div-padding-bottom">
-											<button id="fmore" class="btn btn-default" type="button">
-												<i class="glyphicon glyphicon-plus-sign"></i>
-											</button>
+																					
+										<div class="col-md-2 col-sm-1 col-xs-6 div-padding-bottom">												
+											<button id="fmore" class="btn btn-default" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
 										</div>
-										<div class="col-md-2 col-sm-3 col-xs-6 div-padding-bottom">
-											<span class="pull-right">
+										<div class="col-md-2 col-sm-3 col-xs-6 div-padding-bottom">	
+											<span class="pull-right">											
 												<div class="btn-group">
-													<button type="button" class="btn" id="btnLarge" onclick="showThumbnail()">
-														<i class="glyphicon glyphicon-th-large"></i><!--Button show large content-->
-													</button>
-													<button type="button" class="btn" id="btnList" onclick="showList()">
-														<i class="glyphicon glyphicon-th-list"></i><!--This Button use to show list content-->
-													</button>
-												</div> 
+												  <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-th-large"></i></button>
+												  <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-th-list"></i></button>
+												</div>
 											</span>
 										</div>
 									</div>
@@ -212,15 +169,18 @@
 							</div>
 							<br/>
 							<div class="panel-body">
-								<div class="col-md-12 col-sm-12 col-xs-12 div-padding-bottom" id="showTblContent">
-									<div class="container-fluid">
+									
+								<div class="col-md-12 col-sm-12 col-xs-12 div-padding-bottom">
+									<div class="container-fluid">	
 										<div class="table-responsive">
-											<table class="table table-bordered table-hover">
+											<table class="table table-bordered table-hover">												
 												<thead>
 													<tr class="" style="border-color:#4cae4c; background-color:#5cb85c">
-														<th  style="border-color:#4cae4c;"><span>
-															<input type="checkbox">
-														</span></th>
+														<th  style="border-color:#4cae4c;">
+															<span>
+																												
+															</span>	
+														</th>
 														<th style="border-color:#4cae4c;">Title</th>
 														<th style="border-color:#4cae4c;">Category</th>
 														<th style="border-color:#4cae4c;">Menu</th>
@@ -232,544 +192,621 @@
 													</tr>
 												</thead>
 												</tbody>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td><span>
-														<input type="checkbox">
-													</span></td>
-													<td>Scanner</td>
-													<td>Java</td>
-													<td>Java</td>
-													<td>Apr 23, 2015 10:00:00</td>
-													<td>Sereyvong</td>
-													<td><span class="label label-success">Publish</span></td>
-													<td><i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </td>
-													<td>
-													<button class="btn btn-primary" type="button">
-														<i class="glyphicon glyphicon-plus-sign"></i>
-													</button></td>
-												</tr>
-												<tr>
-													<td colspan="9">
-													<ul class="pagination  pull-right" style="margin: 0px 0;">
-														<li class="active">
-															<a href="#">1</a>
-														</li>
-														<li>
-															<a href="#">2</a>
-														</li>
-														<li>
-															<a href="#">3</a>
-														</li>
-														<li>
-															<a href="#">4</a>
-														</li>
-														<li>
-															<a href="#">5</a>
-														</li>
-														<li>
-															<a href="#">&raquo;</a>
-														</li>
-													</ul></td>
-												</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span>
+																<input type="checkbox">																
+															</span>	
+														</td>
+														<td>Scanner</td>
+														<td>Java</td>
+														<td>Java</td>
+														<td>Apr 23, 2015 10:00:00</td>
+														<td>Sereyvong</td>
+														<td><span class="label label-success">Publish</span></td>
+														<td>
+															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-time"></i> 23 days
+														</td>
+														<td>
+															<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="9">
+															<ul class="pagination  pull-right" style="margin: 0px 0;">
+																<li class="active"><a href="#">1</a></li>
+																<li><a href="#">2</a></li>
+																<li><a href="#">3</a></li>
+																<li><a href="#">4</a></li>
+																<li><a href="#">5</a></li>
+																<li><a href="#">&raquo;</a></li>
+															</ul>
+														</td>														
+													</tr>
 												</tbody>
 											</table>
-										</div>
+										</div>	
 									</div>
 								</div>
-
-								<div class="row" id="showThumnail"><!--Thumbnail Display-->
+							
+								<div class="row" style="display:block;">
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/youtube.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">30:30</span>
-													<p>
-														<a href="#">Present Youtube</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10k <i class="glyphicon glyphicon-time"></i> 10 days </span>
-													<div class="clearfix"></div>
-												</div>
+										  <div class="caption">												
+											<img class="img-responsive" src="img/youtube.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">30:30</span>
+												<p>
+													<a href="#">Present Youtube</a>
+												</p>												
 											</div>
-										</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10k 
+													<i class="glyphicon glyphicon-time"></i> 10 days
+												</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
 									</div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/btb.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">12:00</span>
-													<p>
-														<a href="#">Team BTB Sport</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </span>
-													<div class="clearfix"></div>
-												</div>
+										  <div class="caption">												
+											<img class="img-responsive" src="img/btb.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">12:00</span>
+												<p>
+													<a href="#">Team BTB Sport</a>
+												</p>
 											</div>
-										</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+													<i class="glyphicon glyphicon-time"></i> 23 days
+												</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
 									</div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/images.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">17:00</span>
-													<p>
-														<a href="#">Nokia</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10 <i class="glyphicon glyphicon-time"></i> 3 days</span>
-													<div class="clearfix"></div>
-												</div>
+										  <div class="caption">												
+											<img class="img-responsive" src="img/images.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">17:00</span>
+												<p>
+													<a href="#">Nokia</a>
+												</p>
 											</div>
-										</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10 
+													<i class="glyphicon glyphicon-time"></i> 3 days</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
 									</div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive"  src="img/java.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">12:00</span>
-													<p>
-														<a href="#">Java Detail</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20 <i class="glyphicon glyphicon-time"></i> 1 day</span>
-													<div class="clearfix"></div>
-												</div>
+										  <div class="caption">												
+											<img class="img-responsive"  src="img/java.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">12:00</span>
+												<p>
+													<a href="#">Java Detail</a>
+												</p>
 											</div>
-										</div>
-									</div>
-									<div class="clear4"></div>
-									<div class="col-md-2 col-sm-3 col-xs-12">
-										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/pain.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">9:00</span>
-													<p>
-														<a href="#">Painting </a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 15 <i class="glyphicon glyphicon-time"></i> 1 day</span>
-													<div class="clearfix"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-2 col-sm-3 col-xs-12">
-										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/12.png" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">12:00</span>
-													<p>
-														<a href="#">Khmer New Year</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 15 days</span>
-													<div class="clearfix"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="clear6"></div>
-									<div class="col-md-2 col-sm-3 col-xs-12">
-										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/youtube.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">30:30</span>
-													<p>
-														<a href="#">Present Youtube</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10k <i class="glyphicon glyphicon-time"></i> 10 days </span>
-													<div class="clearfix"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-2 col-sm-3 col-xs-12">
-										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/btb.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">12:00</span>
-													<p>
-														<a href="#">Team BTB Sport</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </span>
-													<div class="clearfix"></div>
-												</div>
-											</div>
-										</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20
+													<i class="glyphicon glyphicon-time"></i> 1 day</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
 									</div>
 									<div class="clear4"></div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/images.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">17:00</span>
-													<p>
-														<a href="#">Nokia</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10 <i class="glyphicon glyphicon-time"></i> 3 days</span>
-													<div class="clearfix"></div>
-												</div>
+										  <div class="caption">												
+											<img class="img-responsive" src="img/pain.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">9:00</span>
+												<p>
+													<a href="#">Painting </a>
+												</p>
 											</div>
-										</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 15
+													<i class="glyphicon glyphicon-time"></i> 1 day</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
 									</div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive"  src="img/java.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">12:00</span>
-													<p>
-														<a href="#">Java Detail</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20 <i class="glyphicon glyphicon-time"></i> 1 day</span>
-													<div class="clearfix"></div>
-												</div>
+										  <div class="caption">												
+											<img class="img-responsive" src="img/12.png" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">12:00</span>
+												<p>
+													<a href="#">Khmer New Year</a>
+												</p>
 											</div>
-										</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k 
+													<i class="glyphicon glyphicon-time"></i> 15 days</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
+									</div>
+									<div class="clear6"></div>											
+									<div class="col-md-2 col-sm-3 col-xs-12">
+										<div class="thumbnail">
+										  <div class="caption">												
+											<img class="img-responsive" src="img/youtube.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">30:30</span>
+												<p>
+													<a href="#">Present Youtube</a>
+												</p>
+											</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10k 
+													<i class="glyphicon glyphicon-time"></i> 10 days
+												</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
+									</div>
+									<div class="col-md-2 col-sm-3 col-xs-12">
+										<div class="thumbnail">
+										  <div class="caption">												
+											<img class="img-responsive" src="img/btb.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">12:00</span>
+												<p>
+													<a href="#">Team BTB Sport</a>
+												</p>
+											</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+													<i class="glyphicon glyphicon-time"></i> 23 days
+												</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
 									</div>
 									<div class="clear4"></div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/pain.jpg" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">9:00</span>
-													<p>
-														<a href="#">Painting </a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 15 <i class="glyphicon glyphicon-time"></i> 1 day</span>
-													<div class="clearfix"></div>
-												</div>
+										  <div class="caption">												
+											<img class="img-responsive" src="img/images.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">17:00</span>
+												<p>
+													<a href="#">Nokia</a>
+												</p>
 											</div>
-										</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10 
+													<i class="glyphicon glyphicon-time"></i> 3 days</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
 									</div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
-											<div class="caption">
-												<img class="img-responsive" src="img/12.png" alt="">
-												<div class="video-title">
-													<span class="badge pull-right">12:00</span>
-													<p>
-														<a href="#">Khmer New Year</a>
-													</p>
-												</div>
-												<hr class="hr-thumb"/>
-												<div class="">
-													<span class="pull-left">
-														<div class="checkbox" style="padding-top: 0px;">
-															<label>
-																<input class="check-input" type="checkbox">
-															</label>
-														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 15 days</span>
-													<div class="clearfix"></div>
-												</div>
+										  <div class="caption">												
+											<img class="img-responsive"  src="img/java.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">12:00</span>
+												<p>
+													<a href="#">Java Detail</a>
+												</p>
 											</div>
-										</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20
+													<i class="glyphicon glyphicon-time"></i> 1 day</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
 									</div>
-									<div class="clear6"></div>
+									<div class="clear4"></div>
+									<div class="col-md-2 col-sm-3 col-xs-12">
+										<div class="thumbnail">
+										  <div class="caption">												
+											<img class="img-responsive" src="img/pain.jpg" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">9:00</span>
+												<p>
+													<a href="#">Painting </a>
+												</p>
+											</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 15
+													<i class="glyphicon glyphicon-time"></i> 1 day</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
+									</div>
+									<div class="col-md-2 col-sm-3 col-xs-12">
+										<div class="thumbnail">
+										  <div class="caption">												
+											<img class="img-responsive" src="img/12.png" alt="">												
+											<div class="video-title">													
+												<span class="badge pull-right">12:00</span>
+												<p>
+													<a href="#">Khmer New Year</a>
+												</p>
+											</div>
+											<hr class="hr-thumb"/>
+											<div class="">
+												<span class="pull-left">
+													<div class="checkbox" style="padding-top: 0px;">
+														<label>
+															<input class="check-input" type="checkbox">
+														</label>
+													</div>
+												</span>
+												<span class="pull-right">
+													<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k 
+													<i class="glyphicon glyphicon-time"></i> 15 days</span>
+												<div class="clearfix"></div>
+											</div>												
+										  </div>
+										</div>											
+									</div>	
+									<div class="clear6"></div>	
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<ul class="pagination  pull-right">
-											<li class="active">
-												<a href="#">1</a>
-											</li>
-											<li>
-												<a href="#">2</a>
-											</li>
-											<li>
-												<a href="#">3</a>
-											</li>
-											<li>
-												<a href="#">4</a>
-											</li>
-											<li>
-												<a href="#">5</a>
-											</li>
-											<li>
-												<a href="#">&raquo;</a>
-											</li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+											<li><a href="#">&raquo;</a></li>
 										</ul>
 									</div>
-
+									
 								</div>
 							</div>
 						</form>
@@ -781,12 +818,10 @@
 			<div class="modal-dialog">
 				<div class="modal-content" style="margin: 0 auto;">
 					<div class="modal-header" style="text-align: center;">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title">More Filter</h4>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body">	
 						<form>
 							<div class="form-group">
 								<label for="exampleInputEmail1">Title: </label>
@@ -795,79 +830,77 @@
 							<div class="form-group">
 								<label for="exampleInputEmail1">Category: </label>
 								<select class="form-control">
-									<option>-- Select a Category --</option>
+									<option>-- Select a Category --</option>											
 								</select>
 							</div>
 							<div class="form-group">
 								<label for="exampleInputEmail1">Menu: </label>
 								<select class="form-control">
-									<option>-- Select a Menu --</option>
+									<option>-- Select a Menu --</option>											
 								</select>
 							</div>
 							<div class="form-group">
 								<label for="exampleInputEmail1">User: </label>
 								<select class="form-control">
-									<option>-- Select a User --</option>
+									<option>-- Select a User --</option>											
 								</select>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputEmail1">View: </label>
-								<br>
+								<label for="exampleInputEmail1">View: </label><br>
 								<input type="text" style="width:48%;float:right;" class="form-control" id="exampleInputEmail1" placeholder="From...">
 								<input type="text" style="width:48%;float:left;" class="form-control" id="exampleInputEmail1" placeholder="To...">
 								<div class="clearfix"></div>
-							</div>
+							</div>							
 							<div class="form-group">
-								<label for="exampleInputEmail1">Date: </label>
-								<br>
+								<label for="exampleInputEmail1">Date: </label><br>
 								<input type="date" style="width:48%;float:right;" class="form-control" id="exampleInputEmail1" placeholder="From...">
 								<input type="date" style="width:48%;float:left;" class="form-control" id="exampleInputEmail1" placeholder="To...">
 								<div class="clearfix"></div>
-							</div>
-
+							</div>	
+							
 						</form>
-					</div>
+					</div>		
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">
-							Close
-						</button>
-						<button type="button" id="save_change" class="btn btn-primary">
-							Filter
-						</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" id="save_change" class="btn btn-primary">Filter</button>
 					</div>
 				</div>
 			</div>
-		</div>
-		<script src="js/script.js"></script>
+		</div>			
 		<script>
 			$("document").ready(function(e) {
-				$("#fmore").on("click", function() {// wire up the OK button to dismiss the modal when shown
-					$("#myModal").modal({// wire up the actual modal functionality and show the dialog
-						"backdrop" : "static",
-						"keyboard" : true,
-						"show" : true // ensure the modal is shown immediately
+				$("#fmore").on("click", function() {    // wire up the OK button to dismiss the modal when shown
+					$("#myModal").modal({                    // wire up the actual modal functionality and show the dialog
+					  "backdrop"  : "static",
+					  "keyboard"  : true,
+					  "show"      : true                     // ensure the modal is shown immediately
+					});
+				});
+				
+				$("#myModal").on("show", function() {    // wire up the OK button to dismiss the modal when shown
+					$("#myModal a.btn").on("click", function(e) {				
+						console.log("button pressed");   // just as an example...
+						$("#myModal").modal('hide');     // dismiss the dialog
 					});
 				});
 
-				$("#myModal").on("show", function() {// wire up the OK button to dismiss the modal when shown
-					$("#myModal a.btn").on("click", function(e) {
-						console.log("button pressed");
-						// just as an example...
-						$("#myModal").modal('hide');
-						// dismiss the dialog
-					});
-				});
-
-				$("#myModal").on("hide", function() {// remove the event listeners when the dialog is dismissed
-
+				$("#myModal").on("hide", function() {    // remove the event listeners when the dialog is dismissed
+					
 					$("#myModal a.btn").off("click");
 				});
-
-				$("#myModal").on("hidden", function() {// remove the actual elements from the DOM when fully hidden
-
+				
+				$("#myModal").on("hidden", function() {  // remove the actual elements from the DOM when fully hidden
+					
 					$("#myModal").remove();
 				});
 			});
 		</script>
+		<!-- BEGIN FOOTER -->
+		<footer>
+			<hr/>
+			&nbsp;&nbsp;
+			&copy; 2015 <a href="#">Video Management Project</a>
+			<br/><br/><br/>			
+		</footer>
 	</body>
 </html>
