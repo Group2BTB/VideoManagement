@@ -148,19 +148,19 @@
 											<div class="input-group">
 												<input type="text" class="form-control" placeholder="Search for...">
 												<span class="input-group-btn">
-												<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> </button>
+												<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"> </i> </button>
 											  </span>
 											</div>
 										</div>
 																					
 										<div class="col-md-2 col-sm-1 col-xs-6 div-padding-bottom">												
-											<button id="fmore" class="btn btn-default" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
+											<button id="fmore" class="btn btn-default" type="button"><i class="glyphicon glyphicon-plus-sign"> </i> </button>
 										</div>
 										<div class="col-md-2 col-sm-3 col-xs-6 div-padding-bottom">	
 											<span class="pull-right">											
 												<div class="btn-group">
-												  <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-th-large"></i></button>
-												  <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-th-list"></i></button>
+												  <button type="button" id="btnLarge" class="btn" onclick="showThumbnail()"><i class="glyphicon glyphicon-th-large"> </i></button>
+												  <button type="button" id="btnList" class="btn" onclick="showList()"><i class="glyphicon glyphicon-th-list"> </i></button>
 												</div>
 											</span>
 										</div>
@@ -170,7 +170,7 @@
 							<br/>
 							<div class="panel-body">
 									
-								<div class="col-md-12 col-sm-12 col-xs-12 div-padding-bottom">
+								<div class="col-md-12 col-sm-12 col-xs-12 div-padding-bottom" id="showTblContent">
 									<div class="container-fluid">	
 										<div class="table-responsive">
 											<table class="table table-bordered table-hover">												
@@ -289,8 +289,8 @@
 														<td>Sereyvong</td>
 														<td><span class="label label-success">Publish</span></td>
 														<td>
-															<i class="glyphicon glyphicon-link" aria-hidden="true"></i> 20:00
-															<i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k
+															<i class="glyphicon glyphicon-link" aria-hidden="true"> </i> 20:00
+															<i class="glyphicon glyphicon-stats" aria-hidden="true"> </i> 20k
 															<i class="glyphicon glyphicon-time"></i> 23 days
 														</td>
 														<td>
@@ -462,7 +462,7 @@
 									</div>
 								</div>
 							
-								<div class="row" style="display:block;">
+								<div class="row" id="showThumnail">
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
 										  <div class="caption">												
@@ -902,5 +902,6 @@
 			&copy; 2015 <a href="#">Video Management Project</a>
 			<br/><br/><br/>			
 		</footer>
+		<script src="js/script.js"></script>
 	</body>
 </html>
