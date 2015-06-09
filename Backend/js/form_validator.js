@@ -74,7 +74,15 @@ $(document).ready(function() {
                         message: 'The password cannot be the same as username'
                     }
                 }
-            }
+            },
+            title: {
+                /*group: '.col-lg-4',*/
+                validators: {
+                    notEmpty: {
+                        message: 'The title is required and cannot be empty'
+                    }
+                }
+            },
             
         }
     });
@@ -84,7 +92,7 @@ $(document).ready(function() {
         $('#addUserForm').bootstrapValidator('validate');
     });
 
-    $('#resetBtn').click(function() {
+    /*$('#resetBtn').click(function() {
         $('#defaultForm').data('bootstrapValidator').resetForm(true);
-    });
+    });*/
 });
