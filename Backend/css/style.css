@@ -103,6 +103,9 @@ th{
 .panel-green{
 	background-color:#afde5c;
 }
+.panel-orange{
+	background-color:#ff7300;
+}
 .panel-new-blue{
 	background-color:#5ccddf;
 }
@@ -111,6 +114,12 @@ th{
 }
 .i-green{
 	color:#5cb85c;
+}
+.i-orange1{
+	color:#ff7300;
+}
+.i-orange{
+	color:#b85401;
 }
 .i-new-blue{
 	color:#5ccddf;
@@ -152,5 +161,20 @@ th{
 .check-input{
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+.con-center{
+	text-align:center;
+}
+.con-left{
+	text-align:left;
+}
+.con-right{
+	text-align:right;
+}
+.backgroud-green{
+	background-color:#5cb85c;
+}
+.border-green{
+	border-color:#4cae4c;
 }
 

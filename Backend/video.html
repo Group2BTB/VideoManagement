@@ -60,6 +60,13 @@
 									<li><a href="user.html">List User</a></li>									
 								</ul>
 							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Article <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="add_article.html">New Article</a></li>
+									<li><a href="article.html">List Article</a></li>									
+								</ul>
+							</li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown drop">							
@@ -98,8 +105,8 @@
 								<button type="button" class="btn btn-success btn-act"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New</button>
 								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-pencil i-green" aria-hidden="true"></span> Edit</button>
 								<button type="button" class="btn btn-danger btn-act"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash</button>
-								<button type="submit" class="btn btn-info btn-act"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Publish</button>
-								<button type="submit" class="btn btn-warning btn-act"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Unpublished</button>								
+								<button type="button" class="btn btn-info btn-act"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Publish</button>
+								<button type="button" class="btn btn-warning btn-act"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Unpublished</button>								
 								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-check i-green" aria-hidden="true"></span> Check All</button>
 								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-refresh i-green" aria-hidden="true"></span> Refresh</button>
 							</form>	
@@ -154,7 +161,7 @@
 										</div>
 																					
 										<div class="col-md-2 col-sm-1 col-xs-6 div-padding-bottom">												
-											<button id="fmore" class="btn btn-default" type="button"><i class="glyphicon glyphicon-plus-sign"> </i> </button>
+											<button id="fmore" class="btn btn-default" type="button"><i class="glyphicon glyphicon-wrench i-green"></i> Search Tool</button>
 										</div>
 										<div class="col-md-2 col-sm-3 col-xs-6 div-padding-bottom">	
 											<span class="pull-right">											
@@ -193,7 +200,7 @@
 												</thead>
 												</tbody>
 													<tr>
-														<td>
+														<td class="con-center">
 															<span>
 																<input type="checkbox">																
 															</span>	
