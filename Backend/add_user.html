@@ -15,6 +15,62 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootstrapValidator.js"></script>
+		<script src="js/image.js"></script>
+		<script>
+function readURL(input) {
+		if (input.files && input.files[0]) {
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				//var d = "<div><img id='img' class='img-thumbnail'  src='"+e.target.result+"' /></div>";
+				$("#src").attr("src",e.target.result);
+				$("#src").addClass("img-circle");
+				$("#src").attr("style","width:150px")
+			}
+
+			reader.readAsDataURL(input.files[0]);
+		}
+	}		
+$(document).ready(function() {
+	
+		
+	function img(){
+		if (window.File && window.FileReader && window.FileList && window.Blob)
+		{
+			var inp = document.getElementById('img');
+
+			var fsize = inp.files[0].size;
+			var ftype = inp.files[0].type;
+			var fname = inp.files[0].name;
+			
+			switch(ftype)
+			{
+				case 'image/png':
+				case 'image/gif':
+				case 'image/jpeg':
+				case 'image/pjpeg':
+					//alert("Acceptable image file!");
+					if(fsize>(5242880)) //do something if file size more than 1 mb (1048576)
+					{
+						alert("Too big! File upload max : 5MB.");
+					}else{
+						//$('#dimage').attr("style","display:none");
+						readURL(inp);			
+					}
+					break;
+				default:
+					alert('Unsupported File!');
+			}
+		}else{
+			alert("Please upgrade your browser, because your current browser lacks some new features we need!");
+		}
+
+	}
+	$('#img').change(function(){
+		//alert();
+		img();
+	});
+});		
+		</script>
 	</head>
 	<body>
 		<div class="navbar-fixed-top">
@@ -178,10 +234,11 @@
 							<br/>
 							<div class="row">
 								<form id="addUserForm">
+									
 									<div class="col-md-2 col-sm-2 col-xs-12">
 										<div class="fileUpload">
-											<span><img style="cursor:pointer;" src="img/pro.png" alt="" class="upload img-responsive"></span>
-											<input type="file" accept="image/*" class="upload" />
+											<span><img style="cursor:pointer;" id="src" src="img/pro.png" alt="" class="upload img-responsive"></span>
+											<input type="file" id="img" accept="image/*" class="upload" />
 										</div>
 									</div>
 
