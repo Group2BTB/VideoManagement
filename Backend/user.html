@@ -107,10 +107,10 @@
 							<form class="navbar-form navbar-left" role="search" style="border-bottom:none;">							
 								<button type="button" class="btn btn-success btn-act"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New</button>
 								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-pencil i-green" aria-hidden="true"></span> Edit</button>
-								<button type="button" class="btn btn-danger btn-act"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash</button>
+								<button type="button" class="btn btn-danger btn-act" onclick="remove_items()"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash</button>
 								<button type="button" class="btn btn-info btn-act"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Active</button>
 								<button type="button" class="btn btn-warning btn-act"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Desactive</button>								
-								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-check i-green" aria-hidden="true"></span> Check All</button>
+								<button type="button" class="btn btn-default btn-act" onclick="select_all()"><span class="glyphicon glyphicon-check i-green" aria-hidden="true"></span> Check All</button>
 								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-refresh i-green" aria-hidden="true"></span> Refresh</button>
 							</form>	
 							<form class="navbar-form navbar-right" role="search" style="border-bottom:none;">								
@@ -126,7 +126,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12 col-sm-12">					
 					<div class="panel panel-default">														
-						<div class="panel-body">
+						<div class="panel-body" id="panel">
 							<div class="col-md-12 col-sm-12 col-xs-12">																											
 								<div class="col-md-3 col-sm-3 col-xs-6 div-padding-bottom">	
 									<div class="input-group">
@@ -172,7 +172,7 @@
 								</div>
 							</div>
 							<br/>							
-							<div class="row">
+							<div class="row" id="Items">
 							<!---
 								Start show table
 							-->
@@ -436,7 +436,7 @@
 									  </div>
 									</div>											
 								</div>
-								<div class="clear4"></div>
+								
 								<div class="col-md-2 col-sm-3 col-xs-12">
 									<div class="thumbnail">
 									  <div class="caption">												
@@ -498,8 +498,7 @@
 										</div>												
 									  </div>
 									</div>											
-								</div>
-								<div class="clear6"></div>											
+								</div>											
 								<div class="col-md-2 col-sm-3 col-xs-12">
 									<div class="thumbnail">
 									  <div class="caption">												
@@ -562,7 +561,7 @@
 									  </div>
 									</div>											
 								</div>
-								<div class="clear4"></div>
+							
 								<div class="col-md-2 col-sm-3 col-xs-12">
 									<div class="thumbnail">
 									  <div class="caption">												
@@ -625,7 +624,6 @@
 									  </div>
 									</div>											
 								</div>
-								<div class="clear4"></div>
 								<div class="col-md-2 col-sm-3 col-xs-12">
 									<div class="thumbnail">
 									  <div class="caption">												
@@ -786,6 +784,40 @@
 				});
 			});
 		</script>
+		
+		<script>
+		    
+			var chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
+			var items = document.getElementById("Items"); //get parent of all items			
+			
+			/* to select all video items*/
+			function select_all(){
+			
+			//loop to check the boxes of all items
+				for(var i=0; i<chkbox.length; i++)
+					chkbox[i].checked = true;
+			}
+			
+			/* to clear check for all video items*/
+			for(var i=0; i<chkbox.length; i++){
+				chkbox[i].checked = false;
+			}
+			
+			/* to remove checked video items*/
+			function remove_items(){
+				chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
+				var boxes; //temp variable to store video to delete				
+				/* loop to delete checked video items*/
+				for(var i=0; i<chkbox.length; i++){					
+					if(chkbox[i].checked == true){
+						boxes = chkbox[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+						items.removeChild(boxes);
+						i--;
+					}								
+				}				
+			}			
+		</script>
+		
 		<!-- BEGIN FOOTER -->
 		<footer>
 			<hr/>
