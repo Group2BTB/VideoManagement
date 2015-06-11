@@ -23,8 +23,8 @@ function readURL(input) {
 			reader.onload = function(e) {
 				//var d = "<div><img id='img' class='img-thumbnail'  src='"+e.target.result+"' /></div>";
 				$("#src").attr("src",e.target.result);
-				$("#src").addClass("img-circle");
-				$("#src").attr("style","width:150px")
+				//$("#src").addClass("img-circle");
+				//$("#src").attr("style","width:150px")
 			}
 
 			reader.readAsDataURL(input.files[0]);
@@ -234,12 +234,15 @@ $(document).ready(function() {
 							<br/>
 							<div class="row">
 								<form id="addUserForm">
-									
-									<div class="col-md-2 col-sm-2 col-xs-12">
-										<div class="fileUpload">
-											<span><img style="cursor:pointer;" id="src" src="img/pro.png" alt="" class="upload img-responsive"></span>
-											<input type="file" id="img" accept="image/*" class="upload" />
-										</div>
+									<div class="col-md-2 col-sm-2 col-xs-12">										
+										<center>
+											<img  id="src" src="img/pro1.png" alt="" class="img-rounded" style="width:150px;">
+											<br/>
+											<div class="fileUpload btn btn-success">
+												<span>CHOOSE IMAGE</span>
+												<input type="file" id="img" accept="image/*" class="upload" />
+											</div>
+										</center>
 									</div>
 
 									<div class="col-md-5 col-sm-5 col-xs-12 form-horizontal">

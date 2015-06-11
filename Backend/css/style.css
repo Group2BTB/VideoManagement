@@ -77,17 +77,7 @@
 	margin-bottom: 0px;
 }
 
-.fileUpload input.upload {
-  height: 170px;
-  position: absolute;
-  top: 2px;
-  right: 8px;
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  cursor: pointer;
-  opacity: 0;
-}
+
 th{
 	text-align:center;
 }
@@ -176,5 +166,22 @@ th{
 }
 .border-green{
 	border-color:#4cae4c;
+}
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
 }
 
