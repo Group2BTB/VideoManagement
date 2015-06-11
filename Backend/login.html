@@ -4,69 +4,70 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="icon" href="img/icon.png" />
-
 		<title>Video Management</title>
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link href="css/style.css" rel="stylesheet">
 		<script src="js/jquery.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				$(function() {
-					$("#myModal").modal();
-				});
-			});
-
-		</script>
 	</head>
 	<body>
-		
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content col-sm-12 col-xs-12">
-							<div class="modal-header text-center h2 text-primary">
-								<span class="modal-title" id="myModalLabel">Video Management</span>
-							</div>
-							<div class="modal-body">
-								<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-									<img class="img-responsive" src="img/icon-login.png"/>
-								</div>
-								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-									<form id="loginForm" class="form-horizontal" role="form">
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+					<div class="modal-header text-center h2 text-primary">
+						<span class="modal-title" id="myModalLabel">Video Management</span>
+					</div>
+					<div class="modal-body">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+							<img class="img-responsive" src="img/icon-login.png"/>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+							<form id="loginForm" class="form-horizontal" role="form">
 
-										<div class="form-group">
-											<div class="input-group">
-												<span class="input-group-addon"><i class="glyphicon glyphicon-user i-blue"> </i></span>
-												<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="input-group">
-												<span class="input-group-addon"><i class="glyphicon glyphicon-lock i-blue"> </i></span>
-												<input id="login-password" type="password" class="form-control" name="password" placeholder="password">
-											</div>
-										</div>
-
-										<div class="form-group">
-											<input type="button" id="btnLogin" class="btn btn-primary pull-right" value="Login"/>
-											<a href="index.html"> </a>
-											<a href="#">Forgot your password ?</a>
-										</div>
-
-									</form>
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user i-blue"> </i></span>
+										<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-md-12 control">
-									<hr class="colorgraph"/>
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-lock i-blue"> </i></span>
+										<input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+									</div>
 								</div>
-							</div>
+
+								<div class="form-group">
+									<input type="button" id="btnLogin" class="btn btn-primary pull-right" value="Login"/>
+									<a href="index.html"> </a>
+									<a href="#">Forgot your password ?</a>
+								</div>
+
+							</form>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-12 control">
+							<hr class="colorgraph"/>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$(function() {
+					$("#myModal").modal({
+						backdrop : 'static',
+						keyboard : false
+					});
+				});
+			});
+		</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootstrapValidator.js"></script>
 		<script src="js/loginValidator.js"></script>

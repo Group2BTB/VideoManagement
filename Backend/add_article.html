@@ -138,17 +138,20 @@
 							<br/>
 							<div class="row">								
 								
-								<div class="col-md-5 col-sm-5 col-xs-12 form-horizontal">										
-									<div class="form-group">
+								<div class="col-md-5 col-sm-5 col-xs-12 form-horizontal">
+									<form id="addUserForm">
+										<div class="form-group">
 										<label for="title" class="col-sm-3 control-label">*Title:</label>
 										<div class="col-sm-9">
-										  <input type="email" class="form-control" id="title" placeholder="Email">
+										  <input type="text" class="form-control" id="title" placeholder="Title" name="title">
 										</div>
 									</div>
+									</form>										
+									
 									<div class="form-group">
 										<label for="alias" class="col-sm-3 control-label">Alias:</label>
 										<div class="col-sm-9">
-										  <input type="email" class="form-control" id="alias" placeholder="Email">
+										  <input type="text" class="form-control" id="alias" placeholder="alias">
 										</div>
 									</div>
 									<div class="form-group">
@@ -210,6 +213,8 @@
 				$("#msg_error").hide();
 			});
 		</script>
+		<script src="js/bootstrapValidator.js"></script>
+		<script src="js/form_validator.js"></script>
 		<!-- BEGIN FOOTER -->
 		<footer>
 			<hr/>
