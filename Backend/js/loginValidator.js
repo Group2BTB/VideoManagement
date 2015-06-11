@@ -1,6 +1,5 @@
  	 	
 $(document).ready(function() {
-		
     $('#loginForm').bootstrapValidator({
 //        live: 'disabled',
         message: 'This value is not valid',
