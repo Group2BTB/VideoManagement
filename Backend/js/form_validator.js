@@ -1,5 +1,8 @@
+
+ 	 	 	
 $(document).ready(function() {
-    
+	
+		
     $('#addUserForm').bootstrapValidator({
 //        live: 'disabled',
         message: 'This value is not valid',
