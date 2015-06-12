@@ -20,28 +20,42 @@
 		
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script>
+			function reload(){
+					$("#des_com").hide();
+					$("#txt_title").removeClass("col-md-8 col-xs-12");
+					$("#txt_title").addClass("col-md-12 col-xs-12");
+					$("#txt_drop").hide();
+				}
 			
 			$(document).ready(function(){
-				$("#des_com").hide();
-				$("#txt_title").removeClass("col-md-8 col-xs-12");
-				$("#txt_title").addClass("col-md-12 col-xs-12");
-				$("#txt_drop").hide();
-				
+				/*function reload(){
+					$("#des_com").hide();
+					$("#txt_title").removeClass("col-md-8 col-xs-12");
+					$("#txt_title").addClass("col-md-12 col-xs-12");
+					$("#txt_drop").hide();
+				}*/
+					
 				$("#txt_title").focusin(function(){
-					$("#txt_drop").show(300);
+					$("#txt_drop").fadeIn(500);
 					$("#des_com").slideDown(500);
 					$("#txt_title").removeClass("col-md-12 col-xs-12");
 					$("#txt_title").addClass("col-md-8 col-xs-12");
 				});
 				
-				
+				$("#cancel").click(function(){
+					//reload();
+					$("#des_com").hide(500);
+					$("#txt_drop").fadeOut(500);
+					$("#txt_title").removeClass("col-md-8 col-xs-12");
+					$("#txt_title").addClass("col-md-12 col-xs-12");
+				});
 				
 			});
 		</script>
 		
 	</head>
 
-	<body id="page-top">
+	<body id="page-top" onload="reload()">
 
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
