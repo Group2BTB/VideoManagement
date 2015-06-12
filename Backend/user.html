@@ -763,10 +763,8 @@
 		</script>
 
 		<script>
-			var chkbox = document.getElementsByClassName("check-input");
-			//get all element object of check-input class
-			var items = document.getElementById("Items");
-			//get parent of all items
+			var chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
+			var items = document.getElementById("Items");	//get parent of all items
 
 			/* to select all video items*/
 			function select_all() {
@@ -783,14 +781,12 @@
 
 			/* to remove checked video items*/
 			function remove_items() {
-				chkbox = document.getElementsByClassName("check-input");
-				//get all element object of check-input class
-				var boxes;
-				//temp variable to store video to delete
+				chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
+				var boxes; //temp variable to store video to delete
 				/* loop to delete checked video items*/
 				for (var i = 0; i < chkbox.length; i++) {
 					if (chkbox[i].checked == true) {
-						boxes = chkbox[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+						boxes = chkbox[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 						items.removeChild(boxes);
 						i--;
 					}
