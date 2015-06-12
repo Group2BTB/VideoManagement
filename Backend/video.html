@@ -138,7 +138,7 @@
 								<button type="button" class="btn btn-default btn-act">
 									<span class="glyphicon glyphicon-pencil i-green" aria-hidden="true"></span> Edit
 								</button>
-								<button type="button" class="btn btn-danger btn-act">
+								<button type="button" class="btn btn-danger btn-act" onclick="remove_items()">
 									<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash
 								</button>
 								<button type="button" class="btn btn-info btn-act">
@@ -147,7 +147,7 @@
 								<button type="button" class="btn btn-warning btn-act">
 									<span class="glyphicon glyphicon-record" aria-hidden="true"></span> Unpublished
 								</button>
-								<button type="button" class="btn btn-default btn-act">
+								<button type="button" class="btn btn-default btn-act" id="selectAll" onclick="select_all()">
 									<span class="glyphicon glyphicon-check i-green" aria-hidden="true"></span> Check All
 								</button>
 								<button type="button" class="btn btn-default btn-act">
@@ -915,6 +915,93 @@
 				});
 			});
 		</script>
+		
+		<script>
+			var chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
+			var items = document.getElementById("showThumnail");	//get parent of all items
+			var selAll = document.getElementById("selectAll");  //get object SelectAll button
+			var chkAllIcon = "<span class='glyphicon glyphicon-check i-green' aria-hidden='true'></span>";	//variable for a icon
+			
+			/* To check if all videos are selected all or unselected all */
+			function checkSelect(){
+				var is_select = false;
+				/*check if all videos are unselected*/
+				for(var i=0; i<chkbox.length; i++){
+					if(chkbox[i].checked == true){
+						is_select = true;
+						break;
+					}						
+				}
+				
+				/*if all videos are unselected, change innerHTML*/
+				if(is_select == false){
+					selAll.innerHTML = chkAllIcon + " Check All";
+				}
+				
+				is_select = false;
+				
+				/* to check if all videos are selected */				
+				for(var i=0; i<chkbox.length; i++){
+					if(chkbox[i].checked == false){
+						is_select = true;
+						break;
+					}	
+				}
+				
+				/* if all videos are selected, change innerHTML*/
+				if(is_select == false){
+					selAll.innerHTML = chkAllIcon + " Uncheck All";
+				}
+			}
+			
+			/* assign onclick event of all check-input class elements to checkSelect function*/
+			for(var i=0; i<chkbox.length; i++){
+				chkbox[i].onclick = checkSelect;
+			}
+			
+			/* to select all video items when button is clicked*/
+			function select_all() {
+				
+				if(selAll.innerText.trim() == "Check All"){
+					//loop to check the boxes of all items
+					for (var i = 0; i < chkbox.length; i++)
+						chkbox[i].checked = true;
+						
+					selAll.innerHTML= chkAllIcon + " Uncheck All";
+					}
+					
+				else{
+					/*loop to uncheck for all items */
+					for(var i=0; i<chkbox.length; i++){
+						chkbox[i].checked = false;
+					}
+					selAll.innerHTML=chkAllIcon + " Check All";
+				}					
+			}			
+
+			/* to clear check for all video items*/
+			for (var i = 0; i < chkbox.length; i++) {
+				chkbox[i].checked = false;
+			}
+
+			/* to remove checked video items when button is clicked*/
+			function remove_items() {
+				chkbox = document.getElementsByClassName("check-input");
+				//get all element object of check-input class
+				var boxes;
+				//temp variable to store video to delete
+				/* loop to delete checked video items*/
+				for (var i = 0; i < chkbox.length; i++) {
+					if (chkbox[i].checked == true) {
+						boxes = chkbox[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode; //get 7th parent element of a check-input class						
+						items.removeChild(boxes); //remove the parent the check-input class
+						i--;
+					}
+				}
+				selAll.innerHTML=chkAllIcon + " Check All";
+			}
+		</script>
+				
 		<!-- BEGIN FOOTER -->
 		<footer>
 			<hr/>
