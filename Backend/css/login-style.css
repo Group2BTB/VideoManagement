@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+	.btn-act {
+		margin-top: 5px;
+	}
+	.img-responsive {
+		max-width: 40%;
+		min-width: 30%;
+		margin-left: 30%;
+		margin-top: -25px;
+	}
+	.h2 {
+		font-size: 20px;
+	}
+	.border-footer {
+		border-top: 1px solid #e5e5e5;
+		margin-bottom: 30px;
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+	.modal {
+		top: 90px;
+	}
+	.modal-header {
+		padding: 0px;
+	}
+
+}
+@media (min-width: 768px) {
+	.img-responsive {
+		margin-top: -20px;
+		border-right: 1px solid #e5e5e5;
+	}
+	.border-footer {
+		border-top: 1px solid #e5e5e5;
+		margin-bottom: 30px;
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+	.modal {
+		top: 15%;
+	}
+	.modal-header {
+		padding: 0px;
+	}
+}
