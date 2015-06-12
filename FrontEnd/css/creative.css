@@ -72,8 +72,9 @@ section {
     padding-top: 60px;
 }
 .section2 .text{
+	position: relative;
     font-family: Adobe Gothic Std B;
-    padding: 6% 5%;
+    padding-top: 9%; 
     color: white;
     font-size: 30px;
 }
@@ -578,7 +579,9 @@ border: 1px black solid;
     .top10 .resizes {font-size: 12px;}
     .col-xs-6 .resizes {font-size: 12px; margin-top:8%;}
 }
+
 }
+
 .bgs-color{
     
     background-color:rgba(255,255,255, 0.3);    
