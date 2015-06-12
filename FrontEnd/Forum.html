@@ -17,6 +17,34 @@
 		<link rel="stylesheet" href="css/animate.min.css" type="text/css">
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/creative.css" type="text/css">
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script>
+			
+			$(document).ready(function(){
+				
+				
+				//$("#txt_drop").remove();
+				$("#des_com").hide();
+//				$("#txt_title").removeClass("col-md-8 col-xs-12");
+//				$("#txt_title").addClass("col-md-12 col-xs-12");
+				$("#txt_drop").hide();
+				$("#txt_title").focusin(function(){
+					$("#txt_drop").show();
+					$("#des_com").slideDown(500);
+					//$("#txt_title").css("width", "70%");
+					
+//					$("#txt_title").removeClass("col-md-12 col-xs-12");
+//					$("#txt_title").addClassClass("col-md-8 col-xs-12");
+					
+					
+				});
+				
+				
+				
+			});
+		</script>
+		
 	</head>
 
 	<body id="page-top">
@@ -31,15 +59,15 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="index.html"> <img src="img/logo1.png" width="60"  /></a>
-					<a class="navbar-brand page-scroll" href="index.html">IT E-Learning in Cambodia</a>
+					<a href="home.html"> <img src="img/logo1.png" width="60"  /></a>
+					<a class="navbar-brand page-scroll" href="home.html">IT E-Learning in Cambodia</a>
 
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a class="page-scroll" href="index.html">Home</a>
+							<a class="page-scroll" href="home.html">Home</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="#">About</a>
@@ -63,13 +91,13 @@
 
 						</li>
 						<li>
-							<a class="page-scroll" href="Forum.html">Forum</a>
+							<a class="page-scroll" href="#">Forum</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="SignUp.html"><span class="glyphicon glyphicon-lock"> </span> Sign Up</a>
+							<a class="page-scroll" href="#"><span class="glyphicon glyphicon-lock"> </span> Sign Up</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="Login.html"><span class="glyphicon glyphicon-user"></span> Sign In</a>
+							<a class="page-scroll" href="#"><span class="glyphicon glyphicon-user"></span> Sign In</a>
 						</li>
 					</ul>
 				</div>
@@ -97,236 +125,291 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-9 col-xs-12">
-					<div class="row" style="margin-top: 2%; opacity: 0.6;">
-						<form role="form">
-							<div class="form-group">
-								<div class="row">
-									<div class="col-sm-9 col-xs-12">
-										<input type="text" class="form-control input-md" placeholder="Click here to start the new topic" />
-									</div>
-									<div class="col-sm-3 col-xs-12">
-										<select class="form-control">
-											<option value="sc">---Select Categories---</option>
-											<option value="de">Design</option>
-											<option value="el">Electronic</option>
-											<option value="gk">General Knowledge</option>
-											<option value="ja">Java</option>
-											<option value="jo">Job</option>
-											<option value="la">Language</option>
-											<option value="mo">Mobie</option>
-											<option value="pr">Programming</option>
-											<option value="wd">Web Development</option>
-										</select>
+				<div class="col-xs-12">
+					<div class="col-md-9 col-xs-12">
+						<div class="row" id="comment">
+							<form role="form" style="margin-top: 2%; opacity: 0.7;">
+								<div class="form-group">
+									<div class="row" id="txt_show">
+										<div class="col-md-8 col-xs-12" id="txt_title">
+											<input type="text" id="text" name="text" class="form-control input-md" placeholder="Click here to start the new topic" />
+										</div>
+										<div class="col-md-4 col-xs-12" id="txt_drop">
+											<select class="form-control">
+												<option value="sc">Categories</option>
+												<option value="de">Design</option>
+												<option value="el">Electronic</option>
+												<option value="gk">General Knowledge</option>
+												<option value="ja">Java</option>
+												<option value="jo">Job</option>
+												<option value="la">Language</option>
+												<option value="mo">Mobie</option>
+												<option value="pr">Programming</option>
+												<option value="wd">Web Development</option>
+											</select>
+										</div>
 									</div>
 								</div>
+								<div class="form-group" id="des_com">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<a href="#">
+											<div class="row">
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-bold"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-italic"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-font"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-text-height"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-text-width"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-align-left"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-align-center"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-align-right"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-align-justify"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-indent-left"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-indent-right"></span>
+												</div>
+												<div class="col-sm-1 col-xs-1">
+													<span class="glyphicon glyphicon-print"></span>
+												</div>
+											</div> </a>
+										</div>
+										<div class="panel-content">
+											<textarea class="form-control"  placeholder="Description"></textarea>
+										</div>
+										<div class="panel-footer">
+											<div class="checkbox"><label><input type="checkbox">Accept terms and Conditions</label></div>
+											<button type="button" class="btn btn-md btn-success">Sumbit</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="row" id="des">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/Design.png" class="img-responsive" alt="Design" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">How to use image in the photoshop?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: yellow; width: 2%;"></div>
+								</div>
 							</div>
-
-						</form>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 well well-sm">
-							<div class="col-xs-1">
-								<img src="img/Forum/Design.png" class="img-responsive" alt="Design" width="50"  />
+						</div>
+						<div class="row">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/Java.png" class="img-responsive" alt="Java" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">What is difference between JDK,JRE and JVM?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: brown; width: 2%;"></div>
+								</div>
 							</div>
-							<div class="col-xs-9">
-								<h4>How to use image in the photoshop?</h4>
-								<p>
-									Upload on 09/06/2015
-								</p>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/electronic.png" class="img-responsive" alt="Electronic" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">What is difference between JDK,JRE and JVM?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: gray; width: 2%;"></div>
+								</div>
 							</div>
-							<div class="col-xs-2">
-								<div class="well-sm pull-right" style="background-color: yellow; width: 2%;"></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/General%20Knowledge.png" class="img-responsive" alt="General Knowledge" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">What is difference between JDK,JRE and JVM?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: blue; width: 2%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/Job.png" class="img-responsive" alt="Job" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">What is difference between JDK,JRE and JVM?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: aquamarine; width: 2%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/language.png" class="img-responsive" alt="Language" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">What is difference between JDK,JRE and JVM?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: #2ecc71; width: 2%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/phone.png" class="img-responsive" alt="Phone" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">What is difference between JDK,JRE and JVM?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: #e74c3c; width: 2%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/Progromming.png" class="img-responsive" alt="Programming" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">What is difference between JDK,JRE and JVM?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: #4e6c8a; width: 2%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/Web%20Development.png" class="img-responsive" alt="Web Programming" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">What is difference between JDK,JRE and JVM?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: #12a252; width: 2%;"></div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-12 well well-sm">
-							<div class="col-xs-1">
-								<img src="img/Forum/Java.png" class="img-responsive" alt="Java" width="50"  />
-							</div>
-							<div class="col-xs-9">
-								<h4>What is difference between JDK,JRE and JVM?</h4>
-								<p>
-									Upload on 09/06/2015
-								</p>
-							</div>
-							<div class="col-xs-2">
-								<div class="well-sm pull-right" style="background-color: brown; width: 2%;"></div>
-							</div>
-						</div>
+					<div class="col-md-3 col-xs-12">
+						<h3 style="color: darkgray;">Statistic</h3>
+						<table class="table table-striped">
+							<thead>
+								<tr class="active">
+									<th>15 Members</th>
+								</tr>
+								<tr class="active">
+									<th>30 Replies</th>
+								</tr>
+							</thead>
+						</table>
+						<h3 style="color: darkgray;">Categories</h3>
+						<table style="width: 100%" class="table table-hover">
+							<tbody>
+								<tr>
+									<td><a href="#">Design<span class="pull-right label label-primary">5</span></a></td>
+									<td><div class="well-sm" style="background-color: yellow;"></div></td>
+								</tr>
+								<tr>
+									<td><a href="#">Electronic<span class="pull-right label label-primary">4</span></a></td>
+									<td><div class="well-sm" style="background-color: grey;"></div></td>
+								</tr>
+								<tr>
+									<td><a href="#">General Knowledge<span class="pull-right label label-primary">15</span></a></td>
+									<td><div class="well-sm" style="background-color: blue;"></div></td>
+								</tr>
+								<tr>
+									<td><a href="#">Java<span class="pull-right label label-primary">21</span></a></td>
+									<td><div class="well-sm" style="background-color: brown;"></div></td>
+								</tr>
+								<tr>
+									<td><a href="#">Job<span class="pull-right label label-primary">11</span></a></td>
+									<td><div class="well-sm" style="background-color: aquamarine;"></div></td>
+								</tr>
+								<tr>
+									<td><a href="#">Language<span class="pull-right label label-primary">12</span></a></td>
+									<td><div class="well-sm" style="background-color: #2ecc71;"></div></td>
+								</tr>
+								<tr>
+									<td><a href="#">Mobile<span class="pull-right label label-primary">14</span></a></td>
+									<td><div class="well-sm" style="background-color: #e74c3c;"></div></td>
+								</tr>
+								<tr>
+									<td><a href="#">Programming<span class="pull-right label label-primary">30</span></a></td>
+									<td><div class="well-sm" style="background-color: #4e6c8a;"></div></td>
+								</tr>
+								<tr>
+									<td><a href="#">Web Development<span class="pull-right label label-primary">14</span></a></td>
+									<td><div class="well-sm" style="background-color: #12a252;"></div></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="row">
-						<div class="col-xs-12 well well-sm">
-							<div class="col-xs-1">
-								<img src="img/Forum/electronic.png" class="img-responsive" alt="Electronic" width="50"  />
-							</div>
-							<div class="col-xs-9">
-								<h4>What is difference between JDK,JRE and JVM?</h4>
-								<p>
-									Upload on 09/06/2015
-								</p>
-							</div>
-							<div class="col-xs-2">
-								<div class="well-sm pull-right" style="background-color: gray; width: 2%;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 well well-sm">
-							<div class="col-xs-1">
-								<img src="img/Forum/General%20Knowledge.png" class="img-responsive" alt="General Knowledge" width="50"  />
-							</div>
-							<div class="col-xs-9">
-								<h4>What is difference between JDK,JRE and JVM?</h4>
-								<p>
-									Upload on 09/06/2015
-								</p>
-							</div>
-							<div class="col-xs-2">
-								<div class="well-sm pull-right" style="background-color: blue; width: 2%;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 well well-sm">
-							<div class="col-xs-1">
-								<img src="img/Forum/Job.png" class="img-responsive" alt="Job" width="50"  />
-							</div>
-							<div class="col-xs-9">
-								<h4>What is difference between JDK,JRE and JVM?</h4>
-								<p>
-									Upload on 09/06/2015
-								</p>
-							</div>
-							<div class="col-xs-2">
-								<div class="well-sm pull-right" style="background-color: aquamarine; width: 2%;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 well well-sm">
-							<div class="col-xs-1">
-								<img src="img/Forum/language.png" class="img-responsive" alt="Language" width="50"  />
-							</div>
-							<div class="col-xs-9">
-								<h4>What is difference between JDK,JRE and JVM?</h4>
-								<p>
-									Upload on 09/06/2015
-								</p>
-							</div>
-							<div class="col-xs-2">
-								<div class="well-sm pull-right" style="background-color: #2ecc71; width: 2%;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 well well-sm">
-							<div class="col-xs-1">
-								<img src="img/Forum/phone.png" class="img-responsive" alt="Phone" width="50"  />
-							</div>
-							<div class="col-xs-9">
-								<h4>What is difference between JDK,JRE and JVM?</h4>
-								<p>
-									Upload on 09/06/2015
-								</p>
-							</div>
-							<div class="col-xs-2">
-								<div class="well-sm pull-right" style="background-color: #e74c3c; width: 2%;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 well well-sm">
-							<div class="col-xs-1">
-								<img src="img/Forum/Progromming.png" class="img-responsive" alt="Programming" width="50"  />
-							</div>
-							<div class="col-xs-9">
-								<h4>What is difference between JDK,JRE and JVM?</h4>
-								<p>
-									Upload on 09/06/2015
-								</p>
-							</div>
-							<div class="col-xs-2">
-								<div class="well-sm pull-right" style="background-color: #4e6c8a; width: 2%;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 well well-sm">
-							<div class="col-xs-1">
-								<img src="img/Forum/Web%20Development.png" class="img-responsive" alt="Web Programming" width="50"  />
-							</div>
-							<div class="col-xs-9">
-								<h4>What is difference between JDK,JRE and JVM?</h4>
-								<p>
-									Upload on 09/06/2015
-								</p>
-							</div>
-							<div class="col-xs-2">
-								<div class="well-sm pull-right" style="background-color: #12a252; width: 2%;"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12">
-					<h3 style="color: darkgray;">Statistic</h3>
-					<table class="table table-striped">
-						<thead>
-							<tr class="active">
-								<th>15 Members</th>
-							</tr>
-							<tr class="active">
-								<th>30 Replies</th>
-							</tr>
-						</thead>
-					</table>
-					<h3 style="color: darkgray;">Categories</h3>
-					<table style="width: 100%" class="table table-hover">
-						<tbody>
-							<tr>
-								<td><a href="#">Design</a></td>
-								<td><div class="well-sm" style="background-color: yellow;"></div></td>
-							</tr>
-							<tr>
-								<td><a href="#">Electronic</a></td>
-								<td><div class="well-sm" style="background-color: grey;"></div></td>
-							</tr>
-							<tr>
-								<td><a href="#">General Knowledge</a></td>
-								<td><div class="well-sm" style="background-color: blue;"></div></td>
-							</tr>
-							<tr>
-								<td><a href="#">Java</a></td>
-								<td><div class="well-sm" style="background-color: brown;"></div></td>
-							</tr>
-							<tr>
-								<td><a href="#">Job</a></td>
-								<td><div class="well-sm" style="background-color: aquamarine;"></div></td>
-							</tr>
-							<tr>
-								<td><a href="#">Language</a></td>
-								<td><div class="well-sm" style="background-color: #2ecc71;"></div></td>
-							</tr>
-							<tr>
-								<td><a href="#">Mobile</a></td>
-								<td><div class="well-sm" style="background-color: #e74c3c;"></div></td>
-							</tr>
-							<tr>
-								<td><a href="#">Programming</a></td>
-								<td><div class="well-sm" style="background-color: #4e6c8a;"></div></td>
-							</tr>
-							<tr>
-								<td><a href="#">Web Development</a></td>
-								<td><div class="well-sm" style="background-color: #12a252;"></div></td>
-							</tr>
-						</tbody>
-					</table>
 				</div>
 			</div>
 		</div>
 	</body>
-
+	
+	
+	
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
 	<!-- Bootstrap Core JavaScript -->
