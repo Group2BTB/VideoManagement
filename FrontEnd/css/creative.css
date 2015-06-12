@@ -614,13 +614,17 @@ table tbody tr td a{
 	color: grey;
 }
 
-.col-xs-9 p, h4 a{
+.col-xs-8 p, h4 button{
 	color: DimGray;
 }
 
-.col-xs-9 h4 a:hover{
+.col-xs-8 h4 button:hover{
 	color: #222222;
 	text-decoration: none;
+}
+
+#row1, #row2, #row3{
+	display: none;
 }
 
 table tbody tr td a:hover{
