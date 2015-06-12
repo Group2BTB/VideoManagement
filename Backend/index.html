@@ -4,16 +4,21 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="icon" href="img/icon.png" />
-
 		<title>Video Management</title>
+		
+		<!-- Import CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- Import JS -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
+	<!-- Start Body -->
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top boder">
 			<div class="container-fluid">
@@ -50,12 +55,16 @@
 		</nav>
 		<div class="container-fluid Dashboard">
 			<div class="row">				
+				<!-- Start Site bar -->
 				<div class="col-sm-3 col-md-2 sidebar-left">
 					<img src="img/logohrd.png" class="img-responsive" alt="Cinque Terre">
 				</div>
+				<!-- End Site bar -->
+				
 				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 					<div class="row placeholders">
-						<div class="row">												
+						<div class="row">
+							<!-- Article -->
 							<div class="col-lg-3 col-md-6">
 								<a href="article.html">
 									<div class="panel panel-orange">
@@ -79,6 +88,9 @@
 									</div>
 								</a>
 							</div>
+							<!-- End Article -->
+							
+							<!-- Category -->
 							<div class="col-lg-3 col-md-6">
 								<a href="category.html">
 									<div class="panel panel-green">
@@ -102,6 +114,9 @@
 									</div>
 								</a>
 							</div>
+							<!-- End Category -->
+							
+							<!-- Menu -->
 							<div class="col-lg-3 col-md-6">								
 								<a href="menu.html">
 									<div class="panel panel-new-blue">
@@ -125,6 +140,9 @@
 									</div>
 								</a>
 							</div>
+							<!-- End Menu -->
+							
+							<!-- User -->
 							<div class="col-lg-3 col-md-6">
 								<a href="user.html">
 									<div class="panel panel-new-red">
@@ -148,6 +166,9 @@
 									</div>
 								</a>
 							</div>
+							<!-- End User -->
+							
+							<!-- Video -->
 							<div class="col-lg-3 col-md-6">
 								<a href="video.html">
 									<div class="panel panel-primary">
@@ -173,6 +194,9 @@
 									</div>
 								</a>
 							</div>
+							<!-- End Video -->
+							
+							<!-- Help -->
 							<div class="col-lg-3 col-md-6">
 								<a href="#">
 									<div class="panel panel-info">
@@ -198,12 +222,18 @@
 									</div>
 								</a>
 							</div>
+							<!-- End Help -->
+							
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>		
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<!-- End Import Script -->
+		<script src="js/bootstrapValidator.js"></script>
+		<script src="js/form_validator.js"></script>
+		<!-- End Import Script -->
+		
 	</body>
+	<!-- End Body -->
 </html>

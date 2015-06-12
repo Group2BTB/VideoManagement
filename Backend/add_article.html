@@ -8,15 +8,20 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="icon" href="img/icon.png" />
-
 		<title>Video Management</title>
+		
+		<!-- Import CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- Import JS -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</head>
+	<!-- Start Body -->
 	<body>
 		<div class="navbar-fixed-top">
+			<!-- Start Menu Main -->
 			<nav class="navbar navbar-default boder" style="border-right:none;border-left:none;border-radius: 0px;margin-bottom: 0px;background-color:white">
 				<div class="container-fluid">
 					<div class="navbar-header">
@@ -28,8 +33,12 @@
 						</button>
 						<a class="navbar-brand" href="index.html"> <span><img src="img/logo.png" class="logo" /> TEAM 2 BTB</span> </a>
 					</div>
+					
 					<div id="navbar" class="navbar-collapse collapse">
+						<!-- Start list menu -->
 						<ul class="nav navbar-nav">
+							
+							<!-- Start Category menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
@@ -41,6 +50,8 @@
 									</li>
 								</ul>
 							</li>
+							
+							<!-- Start Menu menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
@@ -52,6 +63,8 @@
 									</li>
 								</ul>
 							</li>
+							
+							<!-- Start Video menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Video <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
@@ -63,6 +76,8 @@
 									</li>
 								</ul>
 							</li>
+							
+							<!-- Start User menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
@@ -74,6 +89,8 @@
 									</li>
 								</ul>
 							</li>
+							
+							<!-- Start Article menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Article <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
@@ -86,6 +103,9 @@
 								</ul>
 							</li>
 						</ul>
+						<!-- End list menu -->
+						
+						<!-- Start Profile Sitting -->
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown drop">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="img/profile.jpg" style="width:18px;" alt="Profile" class="img-circle"><span class="caret"></span></a>
@@ -113,13 +133,17 @@
 								</ul>
 							</li>
 						</ul>
+						<!-- End Profile Sitting -->
+						
 					</div>
 				</div>
 			</nav>
+			<!-- End Menu Main -->
+			
 			<div style="padding-top:0px;background-color:#e7e7e7;" class="">
+				<!-- Start menu Action -->
 				<nav class="navbar navbar-default" style="border-top:none;border-right:none;border-left: none;border-radius: 0px;">
 					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 								<span class="sr-only">Toggle navigation</span>
@@ -127,46 +151,58 @@
 							</button>
 							<a class="navbar-brand" href="#">New Article</a>
 						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
+							<!-- Start From	-->
 							<form class="navbar-form navbar-left" role="search" style="border:none;">
+								<!-- Button Save -->
 								<button type="button" class="btn btn-success btn-act">
 									<span class="glyphicon glyphicon-check" aria-hidden="true"></span> Save
 								</button>
+								
+								<!-- Button Save & Close-->
 								<button type="button" class="btn btn-default btn-act">
 									<span class="glyphicon glyphicon-ok i-green" aria-hidden="true"></span> Save & Close
 								</button>
+								
+								<!-- Button Save & New-->
 								<button type="button" class="btn btn-default btn-act">
 									<span class="glyphicon glyphicon-plus i-green" aria-hidden="true"></span> Save & New
 								</button>
+								
+								<!-- Button Close -->
 								<button type="button" class="btn btn-default btn-act">
 									<span class="glyphicon glyphicon-remove-sign i-red" aria-hidden="true"></span> Close
 								</button>
 							</form>
 							<form class="navbar-form navbar-right" role="search" style="border-bottom:none;">
+								<!-- Button Help -->
 								<button type="submit" class="btn btn-default">
 									<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Help
 								</button>
 							</form>
+							<!-- End From	-->
 						</div>
 					</div>
 				</nav>
+				<!-- Eng menu Action -->
 			</div>
 		</div>
 
-		<div class="container-fluid"  style="padding-top: 75px;">
+		<div class="container-fluid con_main">
 			<div class="row">
 
 				<!-- Message Alert -->
 				<div class="col-xs-12 col-md-12 col-sm-12">
+				
+					<!-- Message Alert Success	-->
 					<div class="alert alert-success alert-dismissible" role="alert" id="msg_sucess">
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 						<strong>Well done!</strong> You successfully read this important alert message.
 					</div>
+					
+					<!-- Message Alert Wrong	-->
 					<div class="alert alert-danger alert-dismissible" role="alert" id="msg_error">
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
@@ -182,92 +218,109 @@
 							<br/>
 							<br/>
 							<div class="row">
-
-								<div class="col-md-5 col-sm-5 col-xs-12 form-horizontal">
-									<form id="addUserForm">
+								<!-- Start Form add New Article-->
+								<form id="addUserForm">
+									<div class="col-md-5 col-sm-5 col-xs-12 form-horizontal">
+										
+										<!-- Start Title -->
 										<div class="form-group">
 											<label for="title" class="col-sm-3 control-label">*Title:</label>
 											<div class="col-sm-9">
 												<input type="text" class="form-control" id="title" placeholder="Title" name="title">
 											</div>
 										</div>
-									</form>
-
-									<div class="form-group">
-										<label for="alias" class="col-sm-3 control-label">Alias:</label>
-										<div class="col-sm-9">
-											<input type="text" class="form-control" id="alias" placeholder="alias">
+										
+										<!-- Start Alias -->
+										<div class="form-group">
+											<label for="alias" class="col-sm-3 control-label">Alias:</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" id="alias" placeholder="alias">
+											</div>
+										</div>
+										
+										<!-- Start Description -->
+										<div class="form-group">
+											<label for="description" class="col-sm-3 control-label">Description:</label>
+											<div class="col-sm-9">
+												<textarea class="form-control" id="description" placeholder="Description" rows="4"></textarea>
+											</div>
 										</div>
 									</div>
-									<div class="form-group">
-										<label for="description" class="col-sm-3 control-label">Description:</label>
-										<div class="col-sm-9">
-											<textarea class="form-control" id="description" placeholder="Description" rows="4"></textarea>
+									<div class="col-md-5 col-sm-5 col-xs-12 form-horizontal">
+									
+										<!-- Start Category -->
+										<div class="form-group">
+											<label for="category" class="col-sm-3 control-label">Category:</label>
+											<div class="col-sm-9">
+												<select id="category" class="form-control">
+													<option>-- Select a Category --</option>
+													<option>Java</option>
+													<option>Javascript</option>
+													<option>jQuery</option>
+													<option>CSS</option>
+												</select>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="col-md-5 col-sm-5 col-xs-12 form-horizontal">
-									<div class="form-group">
-										<label for="category" class="col-sm-3 control-label">Category:</label>
-										<div class="col-sm-9">
-											<select id="category" class="form-control">
-												<option>-- Select a parent --</option>
-												<option>Java</option>
-												<option>Javascript</option>
-												<option>jQuery</option>
-												<option>CSS</option>
-											</select>
+										
+										<!-- Start Status -->
+										<div class="form-group">
+											<label for="status" class="col-sm-3 control-label">Status:</label>
+											<div class="col-sm-9">
+												<select id="status" class="form-control">
+													<option>Published</option>
+													<option>Unpublished</option>
+													<option>Achieved</option>
+													<option>Trashed</option>
+												</select>
+											</div>
 										</div>
-									</div>
-									<div class="form-group">
-										<label for="status" class="col-sm-3 control-label">Status:</label>
-										<div class="col-sm-9">
-											<select id="status" class="form-control">
-												<option>Published</option>
-												<option>Unpublished</option>
-												<option>Achieved</option>
-												<option>Trashed</option>
-											</select>
+										
+										<!-- Start Access -->
+										<div class="form-group">
+											<label for="access" class="col-sm-3 control-label">Access:</label>
+											<div class="col-sm-9">
+												<select id="access" class="form-control">
+													<option>Public</option>
+													<option>Guest</option>
+													<option>Registered</option>
+												</select>
+											</div>
 										</div>
+										
+										<br/>
+										<br/>
+										<br/>
+										<br/>
 									</div>
-									<div class="form-group">
-										<label for="access" class="col-sm-3 control-label">Access:</label>
-										<div class="col-sm-9">
-											<select id="access" class="form-control">
-												<option>Public</option>
-												<option>Guest</option>
-												<option>Registered</option>
-											</select>
-										</div>
-									</div>
-									<br/>
-									<br/>
-									<br/>
-									<br/>
-								</div>
-
+								</form>
+								<!-- Start Form add New Article-->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 		<script>
 			$(function() {
 				$("#msg_sucess").hide();
 				$("#msg_error").hide();
 			});
 		</script>
+		
+		<!-- End Import Script -->
 		<script src="js/bootstrapValidator.js"></script>
 		<script src="js/form_validator.js"></script>
+		<!-- End Import Script -->
+		
 		<!-- BEGIN FOOTER -->
 		<footer>
 			<hr/>
 			&nbsp;&nbsp;
 			&copy; 2015 <a href="#">Video Management Project</a>
-			<br/>
-			<br/>
-			<br/>
 		</footer>
+		<!-- END FOOTER -->
+		
 	</body>
+	<!-- End Body -->
 </html>

@@ -8,17 +8,22 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="icon" href="img/icon.png" />
-
 		<title>Video Management</title>
+		
+		<!-- Import CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- Import JS -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</head>
+	<!-- Start Body -->
 	<body>
 		<div class="navbar-fixed-top">
+			<!-- Start Menu Main -->
 			<nav class="navbar navbar-default boder" style="border-right:none;border-left:none;border-radius: 0px;margin-bottom: 0px;background-color:white">
-				<div class="container-fluid">				
+				<div class="container-fluid">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 							<span class="sr-only">Toggle navigation</span>
@@ -28,66 +33,118 @@
 						</button>
 						<a class="navbar-brand" href="index.html"> <span><img src="img/logo.png" class="logo" /> TEAM 2 BTB</span> </a>
 					</div>
+					
 					<div id="navbar" class="navbar-collapse collapse">
+						<!-- Start list menu -->
 						<ul class="nav navbar-nav">
+							
+							<!-- Start Category menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li><a href="category.html">New Category</a></li>
-									<li><a href="list_category.html">List Category</a></li>									
+									<li>
+										<a href="category.html">New Category</a>
+									</li>
+									<li>
+										<a href="list_category.html">List Category</a>
+									</li>
 								</ul>
 							</li>
+							
+							<!-- Start Menu menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li><a href="menu.html">New Menu</a></li>
-									<li><a href="list_menu.html">List Menu</a></li>									
+									<li>
+										<a href="menu.html">New Menu</a>
+									</li>
+									<li>
+										<a href="list_menu.html">List Menu</a>
+									</li>
 								</ul>
 							</li>
+							
+							<!-- Start Video menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Video <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li><a href="upload.html">New Video</a></li>
-									<li><a href="video.html">List Video</a></li>									
+									<li>
+										<a href="upload.html">New Video</a>
+									</li>
+									<li>
+										<a href="video.html">List Video</a>
+									</li>
 								</ul>
 							</li>
+							
+							<!-- Start User menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li><a href="add_user.html">New User</a></li>
-									<li><a href="user.html">List User</a></li>									
+									<li>
+										<a href="add_user.html">New User</a>
+									</li>
+									<li>
+										<a href="user.html">List User</a>
+									</li>
 								</ul>
 							</li>
+							
+							<!-- Start Article menu -->
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Article <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li><a href="add_article.html">New Article</a></li>
-									<li><a href="article.html">List Article</a></li>									
+									<li>
+										<a href="add_article.html">New Article</a>
+									</li>
+									<li>
+										<a href="article.html">List Article</a>
+									</li>
 								</ul>
 							</li>
 						</ul>
+						<!-- End list menu -->
+						
+						<!-- Start Profile Sitting -->
 						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown drop">							
+							<li class="dropdown drop">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="img/profile.jpg" style="width:18px;" alt="Profile" class="img-circle"><span class="caret"></span></a>
 								<ul class="dropdown-menu" style="" role="menu">
-									<li><a href="#">Thorn Sereyvong</a></li>
+									<li>
+										<a href="#">Thorn Sereyvong</a>
+									</li>
 									<li class="divider"></li>
-									<li><a href="#">Profile Setting</a></li>
-									<li><a href="#">Change Password</a></li>
-									<li><a href="login.html">Logout</a></li>
+									<li>
+										<a href="#">Profile Setting</a>
+									</li>
+									<li>
+										<a href="#">Change Password</a>
+									</li>
+									<li>
+										<a href="login.html">Logout</a>
+									</li>
 									<li class="divider"></li>
-									<li><a href="#">Privacy</a></li>
-									<li><a href="#">Help</a></li>								
+									<li>
+										<a href="#">Privacy</a>
+									</li>
+									<li>
+										<a href="#">Help</a>
+									</li>
 								</ul>
 							</li>
 						</ul>
-					</div>			
+						<!-- End Profile Sitting -->
+						
+					</div>
 				</div>
 			</nav>
+			<!-- End Menu Main -->
+			
 			<div style="padding-top:0px;background-color:#e7e7e7;" class="">
+				
+				<!-- Start menu Action -->
 				<nav class="navbar navbar-default" style="border-top:none;border-right:none;border-left: none;border-radius: 0px;">
-					  <div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="container-fluid">
 						<div class="navbar-header">
 						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
@@ -95,33 +152,71 @@
 						  </button>
 						  <a class="navbar-brand" href="#">List Article</a>
 						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
+						<!-- Start From	-->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<form class="navbar-form navbar-left" role="search" style="border-bottom:none;">							
+								<!-- Button New -->
 								<button type="button" class="btn btn-success btn-act"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New</button>
+								
+								<!-- Button Edit -->
 								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-pencil i-green" aria-hidden="true"></span> Edit</button>
+								
+								<!-- Button Trash -->
 								<button type="button" class="btn btn-danger btn-act"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash</button>
+								
+								<!-- Button Active -->
 								<button type="button" class="btn btn-info btn-act"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Active</button>
+								
+								<!-- Button Desactive -->
 								<button type="button" class="btn btn-warning btn-act"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Desactive</button>								
+								
+								<!-- Button Check All -->
 								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-check i-green" aria-hidden="true"></span> Check All</button>
+								
+								<!-- Button Refresh -->
 								<button type="button" class="btn btn-default btn-act"><span class="glyphicon glyphicon-refresh i-green" aria-hidden="true"></span> Refresh</button>
 							</form>	
 							<form class="navbar-form navbar-right" role="search" style="border-bottom:none;">								
+								<!-- Button Help -->
 								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Help</button>									
 							</form>	
 						</div>
-					  </div>
-					</nav>
+						<!-- End From	-->
+					</div>
+				</nav>
+				<!-- Eng menu Action -->
+				
 			</div>		
 		</div>
 			
-		<div class="container-fluid"  style="padding-top: 75px;">
+		<div class="container-fluid con_main">
 			<div class="row">
+				<!-- Message Alert -->
+				<div class="col-xs-12 col-md-12 col-sm-12">
+				
+					<!-- Message Alert Success	-->
+					<div class="alert alert-success alert-dismissible" role="alert" id="msg_sucess">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<strong>Well done!</strong> You successfully read this important alert message.
+					</div>
+					
+					<!-- Message Alert Wrong	-->
+					<div class="alert alert-danger alert-dismissible" role="alert" id="msg_error">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<strong>Oh snap!</strong> Change a few things up and try submitting again.
+					</div>
+				</div>
+				<!-- End Message Alert -->
 				<div class="col-xs-12 col-md-12 col-sm-12">					
 					<div class="panel panel-default">														
 						<div class="panel-body">
+							<!-- Start Filter --> 
 							<div class="col-md-12 col-sm-12 col-xs-12">																											
+								<!-- Short Action --> 
 								<div class="col-md-3 col-sm-3 col-xs-6 div-padding-bottom">	
 									<div class="input-group">
 										<span class="input-group-addon" id="basic-addon1">Short by: </span>
@@ -131,6 +226,8 @@
 										</select>
 									</div>
 								</div>
+								
+								<!-- View On page --> 
 								<div class="col-md-2 col-sm-2 col-xs-6 div-padding-bottom">	
 									<div class="input-group">
 										<span class="input-group-addon" id="basic-addon1">View On: </span>
@@ -142,6 +239,8 @@
 										</select>
 									</div>												
 								</div>
+								
+								<!-- Search All field --> 
 								<div class="col-md-3 col-sm-3 col-xs-12 div-padding-bottom">	
 									<div class="input-group">
 										<input type="text" class="form-control" placeholder="Search for...">
@@ -150,10 +249,12 @@
 									  </span>
 									</div>
 								</div>
-																			
+								
+								<!-- btn More Search --> 
 								<div class="col-md-2 col-sm-1 col-xs-6 div-padding-bottom">												
 									<button id="fmore" class="btn btn-default" type="button"><i class="glyphicon glyphicon-wrench i-green"></i> Search Tool</button>
 								</div>
+								<!-- Display Style[list/Grid]
 								<div class="col-md-2 col-sm-3 col-xs-6 div-padding-bottom">	
 									<span class="pull-right">											
 										<div class="btn-group">
@@ -162,17 +263,19 @@
 										</div>
 									</span>
 								</div>
+								-->
 							</div>
-							<br/>							
+							<!-- End Filter --> 
+							<br/>								
 							<div class="row">
-							<!---
-								Start show table
-							-->
 							
+								<!--- Start show table -->
 								<div class="col-md-12 col-sm-12 col-xs-12 div-padding-bottom">
 									<div class="container-fluid">	
 									<div class="table-responsive">
 										<table class="table table-bordered table-hover">												
+											
+											<!-- Start Head table --> 
 											<thead>
 												<tr class="backgroud-green">
 													<th class="border-green"></th>
@@ -184,7 +287,12 @@
 													<th class="border-green">More</th>
 												</tr>
 											</thead>
+											<!-- End Head table -->  
+											
+											<!-- Start body table --> 
 											</tbody>
+												
+												<!-- Row table --> 
 												<tr>
 													<td class="con-center">
 														<span>
@@ -192,14 +300,16 @@
 														</span>	
 													</td>
 													<td>1</td>
-													<td>Sereyvong</td>
-													<td>sereyvong007</td>													
+													<td>Java Programing</td>
+													<td>Java</td>													
 													<td>Apr 23, 2015 10:00:00</td>
 													<td><span class="label label-success">Active</span></td>
 													<td>
 														<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
 													</td>
 												</tr>
+												
+												<!-- Row table --> 
 												<tr>
 													<td class="con-center">
 														<span>
@@ -207,27 +317,32 @@
 														</span>	
 													</td>
 													<td>2</td>
-													<td>Sereyvong</td>
-													<td>sereyvong007</td>													
+													<td>C# Programing</td>
+													<td>c#</td>													
 													<td>Apr 23, 2015 10:00:00</td>
 													<td><span class="label label-success">Active</span></td>
 													<td>
 														<button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus-sign"></i> </button>
 													</td>
 												</tr>
+												
+												<!-- Pagination 
 												<tr>
-														<td colspan="9">
-															<ul class="pagination  pull-right" style="margin: 0px 0;">
-																<li class="active"><a href="#">1</a></li>
-																<li><a href="#">2</a></li>
-																<li><a href="#">3</a></li>
-																<li><a href="#">4</a></li>
-																<li><a href="#">5</a></li>
-																<li><a href="#">&raquo;</a></li>
-															</ul>
-														</td>														
-													</tr>
+													<td colspan="9">
+														<ul class="pagination  pull-right" style="margin: 0px 0;">
+															<li class="active"><a href="#">1</a></li>
+															<li><a href="#">2</a></li>
+															<li><a href="#">3</a></li>
+															<li><a href="#">4</a></li>
+															<li><a href="#">5</a></li>
+															<li><a href="#">&raquo;</a></li>
+														</ul>
+													</td>														
+												</tr>
+												End -->
 											</tbody>
+											
+											<!-- Start body table --> 
 										</table>
 									</div>
 									</div>
@@ -242,6 +357,8 @@
 				</div>
 			</div>	
 		</div>
+		
+		<!-- Start More Filter --> 
 		<div id="myModal" class="modal fade bs-example-modal-lg">
 			<div class="modal-dialog">
 				<div class="modal-content" style="margin: 0 auto;">
@@ -252,12 +369,16 @@
 					<div class="modal-body">	
 						<form>
 							<div class="form-group">
-								<label for="exampleInputEmail1">Username: </label>
+								<label for="exampleInputEmail1">Title: </label>
 								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Title">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputEmail1">Email: </label>
-								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Title">
+								<label for="exampleInputEmail1">Category: </label>
+								<select class="form-control">
+									<option>-- Select a Category --</option>											
+									<option>JAVA</option>											
+									<option>C#</option>											
+								</select>
 							</div>
 							<div class="form-group">
 								<label for="exampleInputEmail1">Status: </label>
@@ -266,19 +387,7 @@
 									<option>Active</option>											
 									<option>deactive</option>											
 								</select>
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Video: </label><br>
-								<input type="text" style="width:48%;float:right;" class="form-control" id="exampleInputEmail1" placeholder="From...">
-								<input type="text" style="width:48%;float:left;" class="form-control" id="exampleInputEmail1" placeholder="To...">
-								<div class="clearfix"></div>
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">View: </label><br>
-								<input type="text" style="width:48%;float:right;" class="form-control" id="exampleInputEmail1" placeholder="From...">
-								<input type="text" style="width:48%;float:left;" class="form-control" id="exampleInputEmail1" placeholder="To...">
-								<div class="clearfix"></div>
-							</div>
+							</div>							
 							<div class="form-group">
 								<label for="exampleInputEmail1">Date: </label><br>
 								<input type="date" style="width:48%;float:right;" class="form-control" id="exampleInputEmail1" placeholder="From...">
@@ -294,9 +403,15 @@
 					</div>
 				</div>
 			</div>
-		</div>			
+		</div>
+		<!-- End More Filter --> 
+		
 		<script>
 			$("document").ready(function(e) {
+				
+				$("#msg_sucess").hide();
+				$("#msg_error").hide();
+				
 				$("#fmore").on("click", function() {    // wire up the OK button to dismiss the modal when shown
 					$("#myModal").modal({                    // wire up the actual modal functionality and show the dialog
 					  "backdrop"  : "static",
@@ -323,12 +438,20 @@
 				});
 			});
 		</script>
+		
+		<!-- End Import Script -->
+		<script src="js/bootstrapValidator.js"></script>
+		<script src="js/form_validator.js"></script>
+		<!-- End Import Script -->
+		
 		<!-- BEGIN FOOTER -->
 		<footer>
 			<hr/>
 			&nbsp;&nbsp;
 			&copy; 2015 <a href="#">Video Management Project</a>
-			<br/><br/><br/>			
 		</footer>
+		<!-- END FOOTER -->
+		
 	</body>
+	<!-- End Body -->
 </html>
