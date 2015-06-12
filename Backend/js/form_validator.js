@@ -2,9 +2,7 @@
  	 	 	
 $(document).ready(function() {
 	
-		
     $('#addUserForm').bootstrapValidator({
-//        live: 'disabled',
         message: 'This value is not valid',
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -32,6 +30,7 @@ $(document).ready(function() {
                         message: 'The username must be more than 6 and less than 30 characters long'
                     },
                     regexp: {
+                    	/*use regular expression to check that it is alphabetical, number, dot and underscore or not*/
                         regexp: /^[a-zA-Z0-9_\.]+$/,
                         message: 'The username can only consist of alphabetical, number, dot and underscore'
                     },
@@ -94,8 +93,4 @@ $(document).ready(function() {
     $('#btnSave').click(function() {
         $('#addUserForm').bootstrapValidator('validate');
     });
-
-    /*$('#resetBtn').click(function() {
-        $('#defaultForm').data('bootstrapValidator').resetForm(true);
-    });*/
 });

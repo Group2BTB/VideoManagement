@@ -172,12 +172,19 @@
 			</div>
 		</div>
 
+		<!--
+		This content use to show sub-menu such as:
+		"Search Tool", "Short By", "View on ",
+		"Show User Content as Grid or Table"
+		-->
 		<div class="container-fluid"  style="padding-top: 75px;">
 			<div class="row">
 				<div class="col-xs-12 col-md-12 col-sm-12">
 					<div class="panel panel-default">
 						<div class="panel-body" id="panel">
 							<div class="col-md-12 col-sm-12 col-xs-12">
+
+								<!--Block Short By -->
 								<div class="col-md-3 col-sm-3 col-xs-6 div-padding-bottom">
 									<div class="input-group">
 										<span class="input-group-addon" id="basic-addon1">Short by: </span>
@@ -189,6 +196,9 @@
 										</select>
 									</div>
 								</div>
+								<!--end Block -->
+
+								<!--Block View On -->
 								<div class="col-md-2 col-sm-2 col-xs-6 div-padding-bottom">
 									<div class="input-group">
 										<span class="input-group-addon" id="basic-addon1">View On: </span>
@@ -200,6 +210,9 @@
 										</select>
 									</div>
 								</div>
+								<!--End block-->
+
+								<!--Block Search-->
 								<div class="col-md-3 col-sm-3 col-xs-12 div-padding-bottom">
 									<div class="input-group">
 										<input type="text" class="form-control" placeholder="Search for...">
@@ -209,23 +222,35 @@
 											</button> </span>
 									</div>
 								</div>
+								<!--End Block-->
 
+								<!-- Button search Tool use to show popup Modal to filter searching tool -->
 								<div class="col-md-2 col-sm-1 col-xs-6 div-padding-bottom">
 									<button id="fmore" class="btn btn-default" type="button">
 										<i class="glyphicon glyphicon-wrench i-green"></i> Search Tool
 									</button>
 								</div>
+								<!--End tag-->
+
+								<!--Block show user's Content as Grid or Table-->
 								<div class="col-md-2 col-sm-3 col-xs-6 div-padding-bottom">
-									<span class="pull-right">
+									<div class="pull-right">
 										<div class="btn-group">
+											<!-- This Function use to call function showThumbnail() to show user's content as Table-->
 											<button type="button" class="btn" id="btnLarge" onclick="showThumbnail()">
 												<i class="glyphicon glyphicon-th-large"></i>
 											</button>
+											<!-- End tag -->
+											
+											<!-- This Function use to call function showList() to show user's content as Table-->
 											<button type="button" class="btn" id="btnList" onclick="showList()">
 												<i class="glyphicon glyphicon-th-list"></i>
 											</button>
-										</div> </span>
+											<!-- End tag -->
+										</div>
+									</div>
 								</div>
+								<!--End Block-->
 							</div>
 							<br/>
 							<div class="row" id="Items">
@@ -347,6 +372,8 @@
 								<!---
 								end show table
 								-->
+								
+								<!--Start Show Grid -->
 								<div id="showThumnail">
 									<div class="col-md-2 col-sm-3 col-xs-12" >
 										<div class="thumbnail">
@@ -608,7 +635,7 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <span class="label label-success">Active</span> <i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i> 0 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 <i class="glyphicon glyphicon-thumbs-up"></i> 0 <i class="glyphicon glyphicon-thumbs-down"></i> 0 </span>
+													<span class="pull-right"> <span class="label label-success">Active</span> <i class="glyphicon glyphicon-facetime-video" aria-hidden="true"> </i> 0 <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 0 <i class="glyphicon glyphicon-thumbs-up"></i> 0 <i class="glyphicon glyphicon-thumbs-down"></i> 0 </span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
@@ -662,7 +689,7 @@
 										</ul>
 									</div>
 								</div>
-
+								<!--end Block -->
 							</div>
 						</div>
 					</div>
@@ -763,8 +790,10 @@
 		</script>
 
 		<script>
-			var chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
-			var items = document.getElementById("Items");	//get parent of all items
+			var chkbox = document.getElementsByClassName("check-input");
+			//get all element object of check-input class
+			var items = document.getElementById("Items");
+			//get parent of all items
 
 			/* to select all video items*/
 			function select_all() {
@@ -781,8 +810,10 @@
 
 			/* to remove checked video items*/
 			function remove_items() {
-				chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
-				var boxes; //temp variable to store video to delete
+				chkbox = document.getElementsByClassName("check-input");
+				//get all element object of check-input class
+				var boxes;
+				//temp variable to store video to delete
 				/* loop to delete checked video items*/
 				for (var i = 0; i < chkbox.length; i++) {
 					if (chkbox[i].checked == true) {
