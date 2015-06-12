@@ -790,15 +790,15 @@
 		</script>
 
 		<script>
-
 			var chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
 			var items = document.getElementById("showThumnail");	//get parent of all items
-			var selAll = document.getElementById("selectAll");
-			var chkAllIcon = "<span class='glyphicon glyphicon-check i-green' aria-hidden='true'></span>";
+			var selAll = document.getElementById("selectAll");  //get object SelectAll button
+			var chkAllIcon = "<span class='glyphicon glyphicon-check i-green' aria-hidden='true'></span>";	//variable for a icon
 			
-			
+			/* To check if all videos are selected all or unselected all */
 			function checkSelect(){
 				var is_select = false;
+				/*check if all videos are unselected*/
 				for(var i=0; i<chkbox.length; i++){
 					if(chkbox[i].checked == true){
 						is_select = true;
@@ -806,25 +806,32 @@
 					}						
 				}
 				
+				/*if all videos are unselected, change innerHTML*/
 				if(is_select == false){
 					selAll.innerHTML = chkAllIcon + " Check All";
 				}
+				
+				is_select = false;
+				/* to check if all videos are selected */				
+				for(var i=0; i<chkbox.length; i++){
+					if(chkbox[i].checked == false){
+						is_select = true;
+						break;
+					}	
+				}
+				
+				/* if all videos are selected, change innerHTML*/
+				if(is_select == false){
+					selAll.innerHTML = chkAllIcon + " Uncheck All";
+				}
 			}
 			
+			/* assign onclick event of all check-input class elements to checkSelect function*/
 			for(var i=0; i<chkbox.length; i++){
 				chkbox[i].onclick = checkSelect;
 			}
 			
-			
-						
-
-			var chkbox = document.getElementsByClassName("check-input");
-			//get all element object of check-input class
-			var items = document.getElementById("Items");
-			//get parent of all items
-
-
-			/* to select all video items*/
+			/* to select all video items when button is clicked */
 			function select_all() {
 				
 				if(selAll.innerText.trim() == "Check All"){
@@ -836,7 +843,7 @@
 					}
 					
 				else{
-					
+					/*loop to uncheck for all items*/
 					for(var i=0; i<chkbox.length; i++){
 						chkbox[i].checked = false;
 					}
@@ -849,7 +856,7 @@
 				chkbox[i].checked = false;
 			}
 
-			/* to remove checked video items*/
+			/* to remove checked video items when button is clicked*/
 			function remove_items() {
 				chkbox = document.getElementsByClassName("check-input");
 				//get all element object of check-input class
@@ -858,16 +865,15 @@
 				/* loop to delete checked video items*/
 				for (var i = 0; i < chkbox.length; i++) {
 					if (chkbox[i].checked == true) {
-						boxes = chkbox[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
-						//alert(boxes.innerHTML);
-						//return;
-						items.removeChild(boxes);
+						boxes = chkbox[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode; //get 7th parent element of a check-input class						
+						items.removeChild(boxes); //remove the parent the check-input class
 						i--;
 					}
 				}
 				selAll.innerHTML=chkAllIcon + " Check All";
 			}
 		</script>
+		
 		<script src="js/script.js"></script>
 
 		<!-- BEGIN FOOTER -->
