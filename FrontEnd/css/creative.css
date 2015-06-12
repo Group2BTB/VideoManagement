@@ -614,6 +614,15 @@ table tbody tr td a{
 	color: grey;
 }
 
+.col-xs-9 p, h4 a{
+	color: DimGray;
+}
+
+.col-xs-9 h4 a:hover{
+	color: #222222;
+	text-decoration: none;
+}
+
 table tbody tr td a:hover{
 	font-weight: 500;
 	color: black;
