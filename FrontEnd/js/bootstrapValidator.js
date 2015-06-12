@@ -8,7 +8,7 @@
  * @license     MIT
  */
 if (typeof jQuery === 'undefined') {
-	
+	throw new Error('BootstrapValidator\'s JavaScript requires jQuery');
 }
 
 (function($) {
