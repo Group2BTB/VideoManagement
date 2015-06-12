@@ -22,22 +22,16 @@
 		<script>
 			
 			$(document).ready(function(){
-				
-				
-				//$("#txt_drop").remove();
 				$("#des_com").hide();
 				$("#txt_title").removeClass("col-md-8 col-xs-12");
 				$("#txt_title").addClass("col-md-12 col-xs-12");
 				$("#txt_drop").hide();
+				
 				$("#txt_title").focusin(function(){
-					$("#txt_drop").show();
+					$("#txt_drop").show(300);
 					$("#des_com").slideDown(500);
-					//$("#txt_title").css("width", "70%");
-					
-//					$("#txt_title").removeClass("col-md-12 col-xs-12");
-//					$("#txt_title").addClassClass("col-md-8 col-xs-12");
-					
-					
+					$("#txt_title").removeClass("col-md-12 col-xs-12");
+					$("#txt_title").addClass("col-md-8 col-xs-12");
 				});
 				
 				
@@ -199,6 +193,7 @@
 										<div class="panel-footer">
 											<div class="checkbox"><label><input type="checkbox">Accept terms and Conditions</label></div>
 											<button type="button" class="btn btn-md btn-success">Sumbit</button>
+											<button type="button" id="cancel" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>Cancel</button>
 										</div>
 									</div>
 								</div>
