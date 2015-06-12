@@ -348,7 +348,7 @@
 	</body>
 
 	<script src="js/jquery-2.1.4.min.js"></script>
-	
+
 	<script>
 		$(document).ready(function() {
 			$("#btn1").click(function() {
@@ -360,10 +360,10 @@
 			$("#add_title").click(function() {
 				$("#row3").toggle(500);
 			});
-			
+
 		});
 	</script>
-	
+
 	<script>
 		function reload() {
 			$("#des_com").hide();
@@ -420,57 +420,62 @@
 		function checkCondition() {
 			var title = document.forms["frm"]["text"].value;
 			var desc = document.getElementById("description").value;
-			
+
 			//alert(desc);
-			
+
 			var d = new Date();
-						var day = d.getDate();
-						var month = d.getMonth() + 1;
-						var year = d.getFullYear();
-						var idx = document.getElementById("category").selectedIndex;
-			
-						if (check_con.checked) {
-							des_cri.innerHTML = "";
-							var date = "Upload on " + day + "/" + month + "/" + year;
-							$("#add_date").empty();
-							$("#add_title").empty();
-							$("#add_title").append(title);
-							$("#add_date").append(date);
-			
-							switch (idx) {
-							case 1:
-								$("#color_box").css("background-color", "yellow");
-								break;
-							case 2:
-								$("#color_box").css("background-color", "grey");
-								break;
-							case 3:
-								$("#color_box").css("background-color", "blue");
-								break;
-							case 4:
-								$("#color_box").css("background-color", "brown");
-								break;
-							case 5:
-								$("#color_box").css("background-color", "aquamarine");
-								break;
-							case 6:
-								$("#color_box").css("background-color", "#2ecc71");
-								break;
-							case 7:
-								$("#color_box").css("background-color", "#e74c3c");
-								break;
-							case 8:
-								$("#color_box").css("background-color", "#e74c3c");
-								break;
-							case 9:
-								$("#color_box").css("background-color", "#12a252");
-								break;
-							}
-							
-							$("#des").before(comment.innerHTML);
-							clearAll();
-							reload();
-			
+			var day = d.getDate();
+			var month = d.getMonth() + 1;
+			var year = d.getFullYear();
+			var idx = document.getElementById("category").selectedIndex;
+
+			if (check_con.checked) {
+				des_cri.innerHTML = "";
+				var date = "Upload on " + day + "/" + month + "/" + year;
+				$("#add_date").empty();
+				$("#add_title").empty();
+
+				$("#add_date").append(date);
+
+				switch (idx) {
+				case 1:
+					$("#color_box").css("background-color", "yellow");
+					break;
+				case 2:
+					$("#color_box").css("background-color", "grey");
+					break;
+				case 3:
+					$("#color_box").css("background-color", "blue");
+					break;
+				case 4:
+					$("#color_box").css("background-color", "brown");
+					break;
+				case 5:
+					$("#color_box").css("background-color", "aquamarine");
+					break;
+				case 6:
+					$("#color_box").css("background-color", "#2ecc71");
+					break;
+				case 7:
+					$("#color_box").css("background-color", "#e74c3c");
+					break;
+				case 8:
+					$("#color_box").css("background-color", "#e74c3c");
+					break;
+				case 9:
+					$("#color_box").css("background-color", "#12a252");
+					break;
+				}
+
+				if (title == "" || title == null) {
+					alert("Enter the title");
+					document.getElementById("text").focus();
+				} else {
+					$("#add_title").append(title);
+					$("#des").before(comment.innerHTML);
+					clearAll();
+					reload();
+				}
 
 			} else {
 				des_cri.innerHTML = "Please checked on Accept terms and conditions to submit.";
