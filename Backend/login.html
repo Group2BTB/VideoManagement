@@ -26,26 +26,28 @@
 							<img class="img-responsive" src="img/icon-login.png"/>
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-							<form id="loginForm" class="form-horizontal" role="form">
-
-								<div class="form-group">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-user i-blue"> </i></span>
-										<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+							<div  class="col-sm-12 col-xs-12">
+								<form id="loginForm" method="post" action="index.html">
+									<div class="form-group">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user i-blue"> </i></span>
+											<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+										</div>
 									</div>
-								</div>
-								<div class="form-group">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-lock i-blue"> </i></span>
-										<input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+									<div class="form-group">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-lock i-blue"> </i></span>
+											<input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+										</div>
 									</div>
-								</div>
-								<div class="form-group">
-									<input type="button" id="btnLogin" class="btn btn-primary pull-right" value="Login"/>
-									<a href="index.html"> </a>
-									<a href="#">Forgot your password ?</a>
-								</div>
-							</form>
+									<div class="form-group">
+										<input type="submit" id="" class="btn btn-primary pull-right" value="Login"/>
+										
+										<a href="#">Forgot your password ?</a>
+									</div>
+								</form>
+								
+							</div>							
 
 						</div>
 					</div>

@@ -150,7 +150,6 @@ th {
 		min-width: 30%;
 		margin-left: 30%;
 		margin-top: -25px;
-		opacity: 0.7;
 	}
 	.h2 {
 		font-size: 20px;
@@ -159,22 +158,24 @@ th {
 		border-top: 1px solid #e5e5e5;
 		margin-bottom: 30px;
 		margin-top: 20px;
+		padding-bottom: 20px;
 	}
 	.modal {
 		top: 90px;
 	}
+	
 
 }
 @media (min-width: 768px) {
 	.img-responsive {
-		margin-top: -20px;
+		/*margin-top: -20px;*/
 		border-right: 1px solid #e5e5e5;
-		opacity: 0.7;
 	}
 	.border-footer {
 		border-top: 1px solid #e5e5e5;
 		margin-bottom: 30px;
 		margin-top: 20px;
+		padding-bottom: 20px;
 	}
 	.modal {
 		top: 15%;
