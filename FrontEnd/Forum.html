@@ -99,7 +99,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12"> 
-					<div class="col-md-9 col-xs-12">
+					<div class="col-md-9 col-xs-12" id="co_parent">
 						<div class="row" id="comment">
 							<form role="form" style="margin-top: 2%; opacity: 0.7;">
 								<div class="form-group">
@@ -405,6 +405,26 @@
 				</div>
 			</div>
 		</div>
+		
+	<div id="child_tmp" style="display: none;">
+		<div class="row">
+							<div class="col-xs-12 well well-sm">
+								<div class="col-xs-1">
+									<img src="img/Forum/Progromming.png" class="img-responsive" alt="Programming" width="50"  />
+								</div>
+								<div class="col-xs-9">
+									<h4><a href="#">What is difference between JDK,JRE and JVM?</a></h4>
+									<p>
+										Upload on 09/06/2015
+									</p>
+								</div>
+								<div class="col-xs-2">
+									<div class="well-sm pull-right" style="background-color: #4e6c8a; width: 2%;"></div>
+								</div>
+							</div>
+		</div>
+	</div>
+						
 	</body>
 
 	<script src="js/jquery-2.1.4.min.js"></script>
@@ -438,17 +458,19 @@
 
 	<script>
 		var check_con = document.getElementById("check_con");
-		var des_cri = document.getElementById("des_cri");
-		var comment = document.getElementById("des");
+		var des_cri = document.getElementById("des_cri");		
+		var comment = document.getElementById("child_tmp");
+		//var topic = comment.childNodes[1]
+		
 		function checkCondition() {
 			if (check_con.checked) {
 				des_cri.innerHTML = "";
 
 			} else {
 				des_cri.innerHTML = "Please checked on Accept terms and conditions to submit.";
-			}
+			}			
 			
-			$("#des").after(comment);
+			$("#des").before(comment.innerHTML);
 			alert(comment.innerHTML);
 		}
 	</script>
