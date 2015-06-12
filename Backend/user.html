@@ -154,7 +154,7 @@
 								<button type="button" class="btn btn-warning btn-act">
 									<span class="glyphicon glyphicon-record" aria-hidden="true"></span> Desactive
 								</button>
-								<button type="button" class="btn btn-default btn-act" onclick="select_all()">
+								<button type="button" class="btn btn-default btn-act" id="selectAll" onclick="select_all()">
 									<span class="glyphicon glyphicon-check i-green" aria-hidden="true"></span> Check All
 								</button>
 								<button type="button" class="btn btn-default btn-act">
@@ -790,18 +790,59 @@
 		</script>
 
 		<script>
+
+			var chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
+			var items = document.getElementById("showThumnail");	//get parent of all items
+			var selAll = document.getElementById("selectAll");
+			var chkAllIcon = "<span class='glyphicon glyphicon-check i-green' aria-hidden='true'></span>";
+			
+			
+			function checkSelect(){
+				var is_select = false;
+				for(var i=0; i<chkbox.length; i++){
+					if(chkbox[i].checked == true){
+						is_select = true;
+						break;
+					}						
+				}
+				
+				if(is_select == false){
+					selAll.innerHTML = chkAllIcon + " Check All";
+				}
+			}
+			
+			for(var i=0; i<chkbox.length; i++){
+				chkbox[i].onclick = checkSelect;
+			}
+			
+			
+						
+
 			var chkbox = document.getElementsByClassName("check-input");
 			//get all element object of check-input class
 			var items = document.getElementById("Items");
 			//get parent of all items
 
+
 			/* to select all video items*/
 			function select_all() {
-
-				//loop to check the boxes of all items
-				for (var i = 0; i < chkbox.length; i++)
-					chkbox[i].checked = true;
-			}
+				
+				if(selAll.innerText.trim() == "Check All"){
+					//loop to check the boxes of all items
+					for (var i = 0; i < chkbox.length; i++)
+						chkbox[i].checked = true;
+						
+					selAll.innerHTML= chkAllIcon + " Uncheck All";
+					}
+					
+				else{
+					
+					for(var i=0; i<chkbox.length; i++){
+						chkbox[i].checked = false;
+					}
+					selAll.innerHTML=chkAllIcon + " Check All";
+				}					
+			}			
 
 			/* to clear check for all video items*/
 			for (var i = 0; i < chkbox.length; i++) {
@@ -817,11 +858,14 @@
 				/* loop to delete checked video items*/
 				for (var i = 0; i < chkbox.length; i++) {
 					if (chkbox[i].checked == true) {
-						boxes = chkbox[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+						boxes = chkbox[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+						//alert(boxes.innerHTML);
+						//return;
 						items.removeChild(boxes);
 						i--;
 					}
 				}
+				selAll.innerHTML=chkAllIcon + " Check All";
 			}
 		</script>
 		<script src="js/script.js"></script>
