@@ -20,3 +20,7 @@ header .header-content {
 		max-width: 100%;
 	}
 }
+.navbar-default {
+  background-color: rgba(245,245,245,0) !important;
+  border-color: #e7e7e7;
+}
