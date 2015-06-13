@@ -15,6 +15,11 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/creative.css" type="text/css">
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+		<link type="text/css" rel="stylesheet" href="https://vjs.zencdn.net/4.12/video-js.css" />
+		<script src="https://vjs.zencdn.net/4.12/video.js"></script>
+		<script src="css/youtube.js"></script>
+
 	</head>
 	<body id="page-top">
 
@@ -76,7 +81,16 @@
 
 			<div class="col-sm-8">
 				<div class="col-sm-12">
-					<div><img src="img/player.png" width="100%" class="img-responsive"/>
+					<div>
+
+						<video id="vid1"
+						src=""
+						class="video-js vjs-default-skin"
+						controls preload="auto"
+						width="640"
+						height="360"
+						data-setup='{ "techOrder": ["youtube", "html5"], "src": "http://www.youtube.com/watch?v=ebmk6_M3bag" }'></video>
+
 					</div>
 				</div>
 				<div class="row">
@@ -117,7 +131,6 @@
 					</div>
 				</div><!----------End row Admin and like thumb------------>
 				<hr>
-				 <hr>
 				<div class="col-md-12 ">
 					<div class="row">
 						<div class="col-md-6 col-sm-6 col-xs-9">
@@ -158,7 +171,7 @@
 					<div class="col-md-12 comments" id="comment_box">
 						<div class="row wells">
 							<div class="col-md-4 col-xs-6">
-								<img src="img/admin.png" width="50">
+								<img src="img/Forum.png" width="50">
 								<span><b>Prem Chanthorn</b></span>
 							</div>
 							<div class="col-md-4 col-xs-6" style="padding-top: 17px;">
@@ -176,7 +189,7 @@
 					<div class="col-md-12 comments">
 						<div class="row wells">
 							<div class="col-md-4 col-xs-6">
-								<img src="img/admin.png" width="50">
+								<img src="img/Forum.png" width="50">
 								<span><b>Prem Chanthorn</b></span>
 							</div>
 							<div class="col-md-4 col-xs-6" style="padding-top: 17px;">
@@ -194,7 +207,7 @@
 					<div class="col-md-12 comments">
 						<div class="row wells">
 							<div class="col-md-4 col-xs-6">
-								<img src="img/admin.png" width="50">
+								<img src="img/Forum.png" width="50">
 								<span><b>Prem Chanthorn</b></span>
 							</div>
 							<div class="col-md-4 col-xs-6" style="padding-top: 17px;">
@@ -266,9 +279,8 @@
 					$(document).ready(function() {
 						$("#btnComments").hide();
 					});
-
 					$(document).ready(function() {
-						$(document).focusin(function() {
+						$("#comment").focusin(function() {
 							$("#btnComments").fadeIn(1000);
 						});
 					});
@@ -281,7 +293,6 @@
 					});
 
 				</script>
-
 
 				<!-- jQuery -->
 				<script src="js/jquery.js"></script>
