@@ -11,9 +11,10 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/creative.css" type="text/css">
-		<link rel="stylesheet" href="css/bootstrapValidator.min.css" type="text/css">
+		<link rel="stylesheet" href="css/login-style.css"/>
 		<!-- Custom Fonts -->
-		<script type="text/javascript" src="js/bootstrapValidator.js"></script>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
 	</head>
 
 	<body id="page-top">
@@ -74,59 +75,63 @@
 		</nav>
 
 		<header class="header-sign">
-				
+
 			<div class="header-content">
 				<div class="container">
-					<div class="bgs-color-log">
 						<div class="row">
-							<div class="col-sm-8 col-sm-offset-2 text">
-								<h1><strong>Login Form </strong></h1>
+							<div class="col-sm-12 text-center">
+								<span class="text-success h2"><strong>Login Form </strong></span>
 							</div>
 						</div>
 						<!------/row-------->
 						<div class="row">
-							<div class="col-sm-6 col-sm-offset-3">
-								<div class="form-top">
-									<div class="form-top-left">
-										<h4>Enter your username and password to log in:</h4>
+							<div class="col-sm-7 col-sm-offset-2">
+								<form action="index.html" method="post" id="loginForm" class="form-horizontal">
+									<div class="col-sm-12">
+										<div class="form-group">
+										<label class="text-success col-sm-3 control-label">Username</label>
+										<div class="col-sm-9">
+											<input type="text" name="username" placeholder="Username..." class="form-control">
+										</div>
 									</div>
-									<div class="form-bottom">
-										<form role="form" action="" method="post">
-											<div class="form-group">
-												<label class="sr-only" for="form-username">Username</label>
-												<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
-											</div>
-											<div class="form-group">
-												<label class="sr-only" for="form-password">Password</label>
-												<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
-											</div>
-											<button type="submit" class="btn btn-warning" >
-												Sign in
-											</button>
-										</form><!------------/form----------->
-									</div><!------------/form-bottom----------->
-								</div><!------------/form-top----------->
+									<div class="form-group">
+										<label class="text-success col-sm-3 control-label">Password</label>
+										<div class="col-sm-9 ">
+											<input type="password" name="password" placeholder="Password..." class="form-control">
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<button type="submit" class="btn btn-success" >
+											Sign in
+										</button>
+									</div>
+									</div>
+									
+
+								</form><!------------/form----------->
+
 							</div><!------------/col-sm-6 col-sm-offset-3----------->
 						</div><!------------/form----------->
-					</div><!------------/bgs-color----------->
+					
 				</div><!------------/container----------->
 			</div><!------------/header-content----------->
 		</header><!-- / header -->
 
 		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
+
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
-		<script scr="js/bootstrap.js"></script>
 		<!-- Custom Theme JavaScript -->
 		<script src="js/creative.js"></script>
-
+		<script src="js/loginValidator.js"></script>
 		<script>
-			$('#myButton').on('click', function() {
-				var $btn = $(this).button('loading')
-				// business logic...
-				$btn.button('reset')
-			})
+			/*
+			 $('#myButton').on('click', function() {
+			 var $btn = $(this).button('loading')
+			 // business logic...
+			 $btn.button('reset')
+			 })*/
+
 		</script>
 
 	</body>
