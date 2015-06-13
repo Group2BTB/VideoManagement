@@ -9,18 +9,15 @@
 		<title>E-Learning | Video Learn</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 		<!-- Custom Fonts -->
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-		<!-- Plugin CSS -->
-		<link rel="stylesheet" href="css/animate.min.css" type="text/css">
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/creative.css" type="text/css">
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-
 		<link type="text/css" rel="stylesheet" href="https://vjs.zencdn.net/4.12/video-js.css" />
 		<script src="https://vjs.zencdn.net/4.12/video.js"></script>
 		<script src="css/youtube.js"></script>
 
 	</head>
+
 	<body id="page-top">
 
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -89,8 +86,7 @@
 						controls preload="auto"
 						width="100%"
 						height="500"
-						data-setup='{ "techOrder": ["youtube", "html5"], "src": "http://www.youtube.com/watch?v=ebmk6_M3bag" }'>
-						</video>
+						data-setup='{ "techOrder": ["youtube", "html5"], "src": "http://www.youtube.com/watch?v=ebmk6_M3bag" }'></video>
 
 					</div>
 				</div>
@@ -116,7 +112,7 @@
 								<a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
 							</div>
 							<div class="col-xs-2 col-md-3 col-sm-3">
-								<p>
+								<p id="UserLike">
 									100
 								</p>
 							</div>
@@ -153,7 +149,7 @@
 							<div class="well">
 								<b>Public on June 13, 2015</b>
 								<br />
-								Learn four methods for passing values from one page to another. You'll work with Session...PreviousPage...QueryString...aÂ­nd the Profile Object. For more tips and tutorials, visit www.detacheddesigns.com/blog
+								Learn four methods for passing values from one page to another. You'll work with Session...PreviousPage...QueryString...aÃ‚Â­nd the Profile Object. For more tips and tutorials, visit www.detacheddesigns.com/blog
 							</div>
 							<form role="form">
 								<div class="form-group">
@@ -161,6 +157,7 @@
 									<textarea class="form-control" rows="5" id="comment"></textarea>
 								</div>
 								<input type="button"  value="Comment" id="btnComments" class="pull-right btn btn-default"/>
+								
 							</form>
 
 						</div>
@@ -201,43 +198,6 @@
 								I really like this website. It's very useful for me
 
 							</div>
-
-						</div>
-					</div>
-
-					<div class="col-md-12 comments">
-						<div class="row wells">
-							<div class="col-md-4 col-xs-6">
-								<img src="img/Forum.png" width="50">
-								<span><b>Prem Chanthorn</b></span>
-							</div>
-							<div class="col-md-4 col-xs-6" style="padding-top: 17px;">
-								10 minutes ago
-							</div>
-							<div class="col-md-12 col-xs-12">
-
-								I really like this website. It's very useful for me
-
-							</div>
-							
-							<div class="pull-right">
-							<div class="col-xs-2 col-md-3 col-sm-3">
-								<a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
-							</div>
-							<div class="col-xs-2 col-md-3 col-sm-3">
-								<p>
-									100
-								</p>
-							</div>
-							<div class="col-xs-2 col-md-3 col-sm-3">
-								<a href="#"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></a>
-							</div>
-							<div class="col-xs-2 col-md-3 col-sm-3">
-								<p>
-									0
-								</p>
-							</div>
-						</div>
 
 						</div>
 					</div>
@@ -296,22 +256,41 @@
 				</div>
 
 				<script>
+					//hide button comment
 					$(document).ready(function() {
 						$("#btnComments").hide();
 					});
+					//show button comment when cussor in the textarea
 					$(document).ready(function() {
 						$("#comment").focusin(function() {
 							$("#btnComments").fadeIn(1000);
 						});
 					});
-
+					//add text form textarea to the div below
 					$(document).ready(function() {
 						$("#btnComments").click(function() {
-							$("#show_comments").text($("#comment").val()).addClass("wells col-md-12");
+							//$("#show_comments").text($("#comment").val()).addClass("wells col-md-12");
 
+							var a = '<div class="col-md-12 comments" id="comment_box"><div class="row wells"><div class="col-md-4 col-xs-6"><img src="img/Forum.png" width="50"><span><b>Prem Chanthorn</b></span></div>';
+							var b = '<div class="col-md-4 col-xs-6" style="padding-top: 17px;">Just now</div>';
+							var c = '<div class="col-md-12 col-xs-12">' + $("#comment").val() + '</div></div></div>';
+							$("#comment").val("");
+
+							$("#show_comments").prepend(a + b + c);
 						});
 					});
 
+					var userlike = document.getElementById("UserLike");
+
+					function likeIncrement() {
+						$("#ThumbLike").click(function() {
+							userlike += 1;
+							/*$("#Userlike").text(userlike);*/
+							alert(userlike);
+						});
+					}
+					
+					
 				</script>
 
 				<!-- jQuery -->
@@ -324,6 +303,7 @@
 				<!-- Custom Theme JavaScript -->
 				<script src="js/creative.js"></script>
 				<script src="js/jquery-1.11.3.js"></script>
+			
 	</body>
 </html>
 
