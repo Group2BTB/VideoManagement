@@ -565,28 +565,40 @@
 
 	<script src="js/jquery-2.1.4.min.js"></script>
 
+	<!-- slide the each row in the questions
+		Using Jquery
+	 -->
 	<script>
 		$(document).ready(function() {
-			$("#btn1").click(function() {
+			$("#btn1").click(function() {	// row1
 				$("#row1").toggle(500);
 			});
-			$("#btn2").click(function() {
+			$("#btn2").click(function() {	// row2
 				$("#row2").toggle(500);
 			});
-			$("#btn3").click(function() {
+			$("#btn3").click(function() {	//row3
 				$("#row3").toggle(500);
 			});
-			$("#btn4").click(function() {
+			$("#btn4").click(function() {	//row4
 				$("#row4").toggle(500);
 			});
-			$("#btn5").click(function() {
+			$("#btn5").click(function() {	//row5
 				$("#row5").toggle(500);
 			});
 
 		});
-	</script>
+	</script> 
 
+	<!-- 
+		to make text box in full width for the first load pages
+		after the user focus in the text box show the form
+		to ask the questions 	
+	 -->
 	<script>
+	
+		/*
+			for make text box in full width
+		*/
 		function reload() {
 			$("#des_com").hide();
 			$("#txt_title").removeClass("col-md-8 col-xs-12");
@@ -594,6 +606,9 @@
 			$("#txt_drop").hide();
 		}
 
+		/*
+			to clear all value in the form to null
+		*/
 		function clearAll() {
 			document.forms["frm"]["text"].value = null;
 			document.getElementById("category").firstElementChild
@@ -601,9 +616,16 @@
 
 		}
 
-
+		/*
+			to show form after the user focus in the text box
+		*/
 		$(document).ready(function() {
-			clearAll();
+			
+			clearAll();	// call function clearAll()
+			
+			/*
+				to show form after the user focus in the text box
+			*/
 			$("#txt_title").focusin(function() {
 				$("#txt_drop").fadeIn(500);
 				$("#des_com").slideDown(500);
@@ -611,6 +633,9 @@
 				$("#txt_title").addClass("col-md-8 col-xs-12");
 			});
 
+			/*
+				to hide form after the user click on the cancel
+			*/
 			$("#cancel").click(function() {
 				$("#des_com").hide(500);
 				$("#txt_drop").fadeOut(500);
@@ -620,14 +645,24 @@
 		});
 	</script>
 
+	<!-- 
+		to check validation the form
+		to add each question to each row in pags
+	 -->
 	<script>
-		var check_con = document.getElementById("check_con");
-		var des_cri = document.getElementById("des_cri");
-		var comment = document.getElementById("child_tmp");
-		var cate_index = document.getElementById("category").selectedIndex;
+	
+		/*
+			declare as glouble variable to use in whole script
+		*/
+		var check_con = document.getElementById("check_con");	// get id of checkbox selected value
+		var des_cri = document.getElementById("des_cri");		// get id of text error when user not valid the form
+		var comment = document.getElementById("child_tmp");		// get id of div that control for add to each row in page
+		var cate_index = document.getElementById("category").selectedIndex; //to get id of selected index in select tag
+		var CIndex = 10; //initial value 10 to use as glouble
 
-		var CIndex = 10;
-
+		/*
+			for make text box in full width
+		*/
 		function reload() {
 			$("#des_com").hide(500);
 			$("#txt_drop").fadeOut(500);
@@ -635,32 +670,45 @@
 			$("#txt_title").addClass("col-md-12 col-xs-12");
 		}
 
+		/*
+			to clear all value in the form to null
+		*/
 		function clearAll() {
 			document.forms["frm"]["text"].value = null;
 			document.getElementById("category").firstElementChild
 			document.forms["frm"]["description"].value = null;
 		}
-
+		
+		/*
+			to check condition when click in submit button
+		*/
 		function checkCondition() {
-			var title = document.forms["frm"]["text"].value;
-			var desc = document.getElementById("description").value;
+			
+			/*
+				declare a variable to use in this whole function
+			*/
+			var title = document.forms["frm"]["text"].value;	// get value of text box fields
+			var desc = document.getElementById("description").value;	// get value of textarea fields
+			var d = new Date();	// get the current date
+			var day = d.getDate();	// get day
+			var month = d.getMonth() + 1; // get month(index from 0) plus 1 to skip index 0
+			var year = d.getFullYear();	// get year
+			var idx = document.getElementById("category").selectedIndex;	// get index of selectedIndex in select category
 
-			//alert(desc);
-
-			var d = new Date();
-			var day = d.getDate();
-			var month = d.getMonth() + 1;
-			var year = d.getFullYear();
-			var idx = document.getElementById("category").selectedIndex;
-
+			/*
+				to check whether the user checked in checkbox or not
+			*/			
 			if (check_con.checked) {
-				des_cri.innerHTML = "";
-				var date = "Upload on " + day + "/" + month + "/" + year;
-				$("#add_date").empty();
-				$("#add_title").empty();
+				
+				/*
+					declare a variable to store current date and error text
+				*/
+				des_cri.innerHTML = "";	// initial empty to error text
+				var date = "Upload on " + day + "/" + month + "/" + year;	//initial date in full date
 
-				$("#add_date").append(date);
-
+				/*
+					check index on delectedIndex in select category by take idx
+				*/
 				switch (idx) {
 				case 1:
 					$("#color_box").css("background-color", "yellow");
@@ -699,7 +747,7 @@
 						alert("Enter the description!");
 						document.getElementById("description").focus();
 					} else {
-
+						$("#add_date").text(date);
 						$("#add_title1").text(title);
 
 						var objId = comment.innerHTML;
