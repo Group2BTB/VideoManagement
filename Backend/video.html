@@ -158,7 +158,7 @@
 								<button type="button" class="btn btn-default btn-act" id="selectAll" onclick="select_all()">
 									<span class="glyphicon glyphicon-check i-green" aria-hidden="true"></span> Check All
 								</button>
-								<button type="button" class="btn btn-default btn-act">
+								<button type="button" class="btn btn-default btn-act" onclick="do_reload()">
 									<span class="glyphicon glyphicon-refresh i-green" aria-hidden="true"></span> Refresh
 								</button>
 							</form>
@@ -944,21 +944,28 @@
 			var chkAllIcon = "<span class='glyphicon glyphicon-check i-green' aria-hidden='true'></span>";	//variable for a icon
 			
 			
+			/* function to reload the page*/
+			function do_reload(){				
+				location.reload();
+			}
+			
+			/*function to publish the selected videos*/
 			function do_active(){
 				for(var i=0; i<chkbox.length; i++){
 					if(chkbox[i].checked){
-						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].className = "label label-success";
-						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML = "Publish";						
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].className = "label label-success"; //change class value to publish show
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML = "Publish"; //change content element to publish text
 					}						
 				}
 			}
 			
+			/*function to unpublished the selected videos*/
 			function do_desactive(){
 				
 				for(var i=0; i<chkbox.length; i++){
 					if(chkbox[i].checked){
-						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].className = "label label-danger";
-						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML = "Unpublished";						
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].className = "label label-danger"; //change class value to unpublished show
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML = "Unpublished"; //change content element to publish text
 					}						
 				}
 			}
