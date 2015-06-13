@@ -272,22 +272,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="child_tmp" style="display: none;">
-							<div class="row">
-								<div class="col-xs-12 well well-sm">
-									<div class="col-xs-2">
-										<img src="img/Forum.png" class="img-responsive" alt="Programming" width="100%"  />
-									</div>
-									<div class="col-xs-8">
-										<h4><button class="btn btn-link" id="add_title"></button></h4>
-										<p id="add_date"></p>
-									</div>
-									<div class="col-xs-2">
-										<div id="color_box" class="well-sm pull-right" style="background-color: #4e6c8a; width: 2%;"></div>
-									</div>
-								</div>
-							</div>
-						</div>
+
 					</div>
 					<div class="col-md-3 col-xs-12">
 						<h3 style="color: darkgray;">Statistic</h3>
@@ -346,6 +331,103 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Footer Section -->
+		<aside class="bg-dark">
+			<div class="container">
+				<div class="col-sm-4">
+					<h1 class="redcolor">About Us</h1>
+					<p >
+						Khmer Academy is the first e-learning platform for
+						knowledge sharing in Cambodia. It is developed by
+						Korea Software HRD Center in 2015. All contents are in
+						Khmer language for easy knowledge acquisition.
+						Most contents are related to IT fields and plan to
+						extend more topics. Our mission is to improve education
+						environments of Cambodia by means of IT technologies.
+						Khmer Academy will be a significant education platform
+						which accumulates and shares all kinds of knowledge on internet
+					</p>
+				</div>
+				<div class="col-sm-4">
+					<h1 class="redcolor">Contact Us</h1>
+					<p>
+						Address: #12, St 323, Sangkat Boeung Kak II,
+						KhanToul Kork, Phnom Penh, Cambodia.
+						<br />
+						Tel: (855)23     99 13 14
+						<br />
+						(855)77 77 12 36 (Khmer, English) </br>
+						(855)15 4 5555 2 (Khmer, English)
+						<br />
+						(855)17 52 81 69(Korean, English)
+						<br/>
+					<p class="redcolor">
+						Email: info.kshrd@gmail.com
+						<br/>
+						phirum.gm@gmail.com
+					</p>
+					</p>
+				</div>
+				<div class="col-sm-4">
+					<h1 class="redcolor">Find Us on facebook</h1>
+
+					<!--//faccebook like page-->
+					<div fb-iframe-plugin-query="app_id=&amp;color_scheme=dark&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FKhmerAcademy.org&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" fb-xfbml-state="rendered" class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/KhmerAcademy.Org" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false">
+						<span style="vertical-align: bottom; width: 300px; height: 241px;"><iframe class="" src="http://www.facebook.com/v2.0/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F7r8gQb8MIqE.js%3Fversion%3D41%23cb%3Df2e92cbf83de85e%26domain%3Dwww.kshrd.com.kh%26origin%3Dhttp%253A%252F%252Fwww.kshrd.com.kh%252Ffe5c7ef81a8d78%26relation%3Dparent.parent&amp;color_scheme=dark&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FKhmerAcademy.Org&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" style="border: medium none; visibility: visible; width: 300px; height: 241px;" title="fb:like_box Facebook Social Plugin" scrolling="no" allowtransparency="true" name="f39b09e5f7abb4c" height="1000px" width="1000px" frameborder="0"></iframe></span>
+					</div>
+
+				</div>
+			</div>
+		</aside>
+		<!-- /Footer Section -->
+
+		<div id="child_tmp" style="display: none;">
+			<div class="row" id="parent9">
+				<div class="col-xs-12 well well-sm">
+					<div class="col-xs-2">
+						<img src="img/Forum.png" class="img-responsive" alt="Web Programming" width="100%"  />
+					</div>
+					<div class="col-xs-8">
+						<h4>
+						<button class="btn btn-link" id="add_title1">
+							What is difference between JDK,JRE and JVM?
+						</button></h4>
+						<p id="add_date">
+							Upload on 09/06/2015
+						</p>
+						<div class="row" id="row3">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="row">
+										<div class="col-md-2 col-xs-3">
+											<img src="img/Forum.png" class="img-responsive" alt="Programming" width="80%"  />
+										</div>
+										<div class="col-md-10 col-xs-9">
+											<div id="convers" class="well">
+												Hello world
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<form role="form" id="convers_form">
+								<div class="form-group">
+									<input type="text" class="form-control input-xs" placeholder="Reply" />
+								</div>
+								<button class="btn btn-xs btn-info pull-right">
+									Send
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-2">
+						<div class="well-sm pull-right" style="background-color: #12a252; width: 2%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</body>
 
 	<script src="js/jquery-2.1.4.min.js"></script>
@@ -357,9 +439,6 @@
 			});
 			$("#btn2").click(function() {
 				$("#row2").toggle(500);
-			});
-			$("#add_title").click(function() {
-				$("#row3").toggle(500);
 			});
 
 		});
@@ -404,6 +483,8 @@
 		var des_cri = document.getElementById("des_cri");
 		var comment = document.getElementById("child_tmp");
 		var cate_index = document.getElementById("category").selectedIndex;
+
+		var CIndex = 10;
 
 		function reload() {
 			$("#des_com").hide(500);
@@ -469,13 +550,46 @@
 				}
 
 				if (title == "" || title == null) {
-					alert("Enter the title");
+					alert("Enter the title!");
 					document.getElementById("text").focus();
 				} else {
-					$("#add_title").append(title);
-					$("#des").before(comment.innerHTML);
-					clearAll();
-					reload();
+					if ($("#description").val() == "" || $("#description").val() == null) {
+						alert("Enter the description!");
+						document.getElementById("description").focus();
+					} else {
+
+						$("#add_title1").text(title);
+
+						var objId = comment.innerHTML;
+
+						var obj1 = objId.replace("add_title1", "btn" + CIndex);
+						obj1 = obj1.replace("row3", "row" + CIndex);
+						obj1 = obj1.replace("parent9", "parent" + CIndex);
+						obj1 = obj1.replace("convers", "convers" + CIndex);
+						//change convers
+
+						/*Add to before child*/
+						if (CIndex == 10)
+							$("#des").before(obj1);
+						else {
+							$("#parent" + (CIndex - 1)).before(obj1);
+
+						}
+
+						$("#row" + CIndex).css("display", "none");
+						$("#convers" + CIndex).html($("#description").val());
+
+						$("#btn" + CIndex).click(function() {
+
+							var str = this.id.replace(/\D/g, "");
+							$("#row" + str).toggle(500);
+						});
+
+						CIndex++;
+						clearAll();
+						reload();
+					}
+
 				}
 
 			} else {
