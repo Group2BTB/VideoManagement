@@ -117,6 +117,7 @@
 					</div>
 				</div><!----------End row Admin and like thumb------------>
 				<hr>
+				 <hr>
 				<div class="col-md-12 ">
 					<div class="row">
 						<div class="col-md-6 col-sm-6 col-xs-9">
@@ -143,17 +144,18 @@
 							<form role="form">
 								<div class="form-group">
 									<label for="comment">Comment:</label>
-									<textarea class="form-control" rows="5" id="comment"></textarea>									
-
-
+									<textarea class="form-control" rows="5" id="comment"></textarea>
 								</div>
-								<input type="button"  value="Comment" class="pull-right btn btn-default"/>
+								<input type="button"  value="Comment" id="btnComments" class="pull-right btn btn-default"/>
 							</form>
 
 						</div>
 					</div>
+					<div id="show_comments">
 
-					<div class="col-md-12 comments">
+					</div>
+
+					<div class="col-md-12 comments" id="comment_box">
 						<div class="row wells">
 							<div class="col-md-4 col-xs-6">
 								<img src="img/admin.png" width="50">
@@ -163,17 +165,14 @@
 								10 minutes ago
 							</div>
 							<div class="col-md-12 col-xs-12">
-								
+
 								I really like this website. It's very useful for me
-								
+
 							</div>
 
 						</div>
 					</div>
-					
-					
-					
-					
+
 					<div class="col-md-12 comments">
 						<div class="row wells">
 							<div class="col-md-4 col-xs-6">
@@ -184,14 +183,14 @@
 								10 minutes ago
 							</div>
 							<div class="col-md-12 col-xs-12">
-								
+
 								I really like this website. It's very useful for me
-								
+
 							</div>
 
 						</div>
 					</div>
-					
+
 					<div class="col-md-12 comments">
 						<div class="row wells">
 							<div class="col-md-4 col-xs-6">
@@ -202,9 +201,9 @@
 								10 minutes ago
 							</div>
 							<div class="col-md-12 col-xs-12">
-								
+
 								I really like this website. It's very useful for me
-								
+
 							</div>
 
 						</div>
@@ -262,6 +261,27 @@
 						</p>
 					</div>
 				</div>
+
+				<script>
+					$(document).ready(function() {
+						$("#btnComments").hide();
+					});
+
+					$(document).ready(function() {
+						$(document).focusin(function() {
+							$("#btnComments").fadeIn(1000);
+						});
+					});
+
+					$(document).ready(function() {
+						$("#btnComments").click(function() {
+							$("#show_comments").text($("#comment").val()).addClass("wells col-md-12");
+
+						});
+					});
+
+				</script>
+
 
 				<!-- jQuery -->
 				<script src="js/jquery.js"></script>

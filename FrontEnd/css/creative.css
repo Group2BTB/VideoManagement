@@ -157,7 +157,7 @@ aside {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+        color: burlywood;
     }
 
     .navbar-default .nav > li>a:hover,
@@ -237,7 +237,7 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 5%;
+        top: 25%;
         /*padding: 0 50px;*/
      
     }
