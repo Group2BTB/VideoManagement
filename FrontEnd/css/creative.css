@@ -563,7 +563,9 @@ border: 1px black solid;
 }
 
 @media(max-width:480px){
-    
+    h4 button{
+    	width; 50%;
+    }
     h2{font-size: 20px;}
      .row h1 strong{
          font-size: 15px;
@@ -623,7 +625,7 @@ table tbody tr td a{
 	text-decoration: none;
 }
 
-#row1, #row2, #row3{
+#row1, #row2, #row3, #row4, #row5{
 	display: none;
 }
 
