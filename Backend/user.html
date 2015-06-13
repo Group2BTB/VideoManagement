@@ -154,10 +154,10 @@
 								<button type="button" class="btn btn-danger btn-act" onclick="remove_items()">
 									<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash
 								</button>
-								<button type="button" class="btn btn-info btn-act">
+								<button type="button" class="btn btn-info btn-act" onclick="do_active()">
 									<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Active
 								</button>
-								<button type="button" class="btn btn-warning btn-act">
+								<button type="button" class="btn btn-warning btn-act" onclick="do_desactive()">
 									<span class="glyphicon glyphicon-record" aria-hidden="true"></span> Desactive
 								</button>
 								<button type="button" class="btn btn-default btn-act" id="selectAll" onclick="select_all()">
@@ -800,6 +800,26 @@
 			var items = document.getElementById("showThumnail");	//get parent of all items
 			var selAll = document.getElementById("selectAll");  //get object SelectAll button
 			var chkAllIcon = "<span class='glyphicon glyphicon-check i-green' aria-hidden='true'></span>";	//variable for a icon
+			
+			
+			function do_active(){
+				for(var i=0; i<chkbox.length; i++){
+					if(chkbox[i].checked){
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].className = "label label-success";
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML = "Active";						
+					}						
+				}
+			}
+			
+			function do_desactive(){
+				
+				for(var i=0; i<chkbox.length; i++){
+					if(chkbox[i].checked){
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].className = "label label-danger";
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML = "Deactive";						
+					}						
+				}
+			}
 			
 			/* To check if all videos are selected all or unselected all */
 			function checkSelect(){

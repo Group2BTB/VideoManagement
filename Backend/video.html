@@ -149,10 +149,10 @@
 								<button type="button" class="btn btn-danger btn-act" onclick="remove_items()">
 									<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash
 								</button>
-								<button type="button" class="btn btn-info btn-act">
+								<button type="button" class="btn btn-info btn-act" onclick="do_active()">
 									<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Publish
 								</button>
-								<button type="button" class="btn btn-warning btn-act">
+								<button type="button" class="btn btn-warning btn-act" onclick="do_desactive()">
 									<span class="glyphicon glyphicon-record" aria-hidden="true"></span> Unpublished
 								</button>
 								<button type="button" class="btn btn-default btn-act" id="selectAll" onclick="select_all()">
@@ -505,6 +505,7 @@
 								<!--Start show table content as Grid content-->
 								<div class="row" id="showThumnail">
 									<!--#showThumnail use to identify content as Thumbnail-->
+									
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
 											<div class="caption">
@@ -523,12 +524,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10k <i class="glyphicon glyphicon-time"></i> 10 days </span>
+													<span class="pull-right"> <span class="label label-success">Publish</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10k <i class="glyphicon glyphicon-time"></i> 10 days </span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
 											<div class="caption">
@@ -547,12 +549,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </span>
+													<span class="pull-right"> <span class="label label-success">Publish</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
 											<div class="caption">
@@ -571,12 +574,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10 <i class="glyphicon glyphicon-time"></i> 3 days</span>
+													<span class="pull-right"> <span class="label label-danger">Unpublished</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10 <i class="glyphicon glyphicon-time"></i> 3 days</span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
 											<div class="caption">
@@ -595,12 +599,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20 <i class="glyphicon glyphicon-time"></i> 1 day</span>
+													<span class="pull-right"> <span class="label label-danger">Unpublished</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20 <i class="glyphicon glyphicon-time"></i> 1 day</span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="clear4"></div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
@@ -620,12 +625,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 15 <i class="glyphicon glyphicon-time"></i> 1 day</span>
+													<span class="pull-right"> <span class="label label-success">Publish</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 15 <i class="glyphicon glyphicon-time"></i> 1 day</span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
 											<div class="caption">
@@ -644,12 +650,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 15 days</span>
+													<span class="pull-right"> <span class="label label-success">Publish</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 15 days</span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="clear6"></div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
@@ -669,12 +676,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10k <i class="glyphicon glyphicon-time"></i> 10 days </span>
+													<span class="pull-right"> <span class="label label-danger">Unpublished</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10k <i class="glyphicon glyphicon-time"></i> 10 days </span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
 											<div class="caption">
@@ -693,12 +701,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </span>
+													<span class="pull-right"> <span class="label label-success">Publish</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 23 days </span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="clear4"></div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
@@ -718,12 +727,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10 <i class="glyphicon glyphicon-time"></i> 3 days</span>
+													<span class="pull-right"> <span class="label label-success">Publish</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 10 <i class="glyphicon glyphicon-time"></i> 3 days</span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
 											<div class="caption">
@@ -742,12 +752,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20 <i class="glyphicon glyphicon-time"></i> 1 day</span>
+													<span class="pull-right"> <span class="label label-danger">Unpublished</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20 <i class="glyphicon glyphicon-time"></i> 1 day</span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="clear4"></div>
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
@@ -767,12 +778,13 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 15 <i class="glyphicon glyphicon-time"></i> 1 day</span>
+													<span class="pull-right"> <span class="label label-success">Publish</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 15 <i class="glyphicon glyphicon-time"></i> 1 day</span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-md-2 col-sm-3 col-xs-12">
 										<div class="thumbnail">
 											<div class="caption">
@@ -791,7 +803,7 @@
 																<input class="check-input" type="checkbox">
 															</label>
 														</div> </span>
-													<span class="pull-right"> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 15 days</span>
+													<span class="pull-right"> <span class="label label-danger">Unpublished</span> <i class="glyphicon glyphicon-stats" aria-hidden="true"></i> 20k <i class="glyphicon glyphicon-time"></i> 15 days</span>
 													<div class="clearfix"></div>
 												</div>
 											</div>
@@ -925,10 +937,32 @@
 		</script>
 		
 		<script>
+		
 			var chkbox = document.getElementsByClassName("check-input"); //get all element object of check-input class
 			var items = document.getElementById("showThumnail");	//get parent of all items
 			var selAll = document.getElementById("selectAll");  //get object SelectAll button
 			var chkAllIcon = "<span class='glyphicon glyphicon-check i-green' aria-hidden='true'></span>";	//variable for a icon
+			
+			
+			function do_active(){
+				for(var i=0; i<chkbox.length; i++){
+					if(chkbox[i].checked){
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].className = "label label-success";
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML = "Publish";						
+					}						
+				}
+			}
+			
+			function do_desactive(){
+				
+				for(var i=0; i<chkbox.length; i++){
+					if(chkbox[i].checked){
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].className = "label label-danger";
+						chkbox[i].parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML = "Unpublished";						
+					}						
+				}
+			}
+			
 			
 			/* To check if all videos are selected all or unselected all */
 			function checkSelect(){
